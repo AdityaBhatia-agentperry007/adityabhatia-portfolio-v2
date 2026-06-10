@@ -1,25 +1,5 @@
 import type { NextConfig } from 'next';
-import fs from 'fs';
-import path from 'path';
 
-// Automated copy of the generated Dr. Doom illustration
-const sourcePath = 'C:\\Users\\asus\\.gemini\\antigravity\\brain\\c5aaf149-0a34-4c72-9495-6d19a94f2ad7\\dr_doom_portrait_1781086442183.png';
-const destDir = path.join(process.cwd(), 'public');
-const destPath = path.join(destDir, 'dr_doom.png');
-
-try {
-  if (!fs.existsSync(destDir)) {
-    fs.mkdirSync(destDir, { recursive: true });
-  }
-  if (fs.existsSync(sourcePath)) {
-    fs.copyFileSync(sourcePath, destPath);
-    console.log('Successfully copied Dr. Doom asset to public/dr_doom.png');
-  } else {
-    console.log('Source Dr. Doom asset not found at:', sourcePath);
-  }
-} catch (err) {
-  console.error('Failed to copy Dr. Doom asset:', err);
-}
 
 const nextConfig: NextConfig = {
   images: {
