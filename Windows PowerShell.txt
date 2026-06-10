@@ -1,0 +1,996 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+
+PS C:\Users\asus> ssh debkanta@172.31.100.251
+debkanta@172.31.100.251's password:
+Welcome to Ubuntu 24.04.2 LTS (GNU/Linux 6.8.0-111-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Sun May 24 02:04:59 PM UTC 2026
+
+  System load:                  24.31
+  Usage of /:                   73.2% of 6.87TB
+  Memory usage:                 9%
+  Swap usage:                   33%
+  Temperature:                  47.0 C
+  Processes:                    2527
+  Users logged in:              7
+  IPv4 address for ens238f0np0: 172.31.100.251
+  IPv4 address for ens238f0np0: 172.31.12.100
+  IPv6 address for ens238f0np0: 2001:df0:92:0:7d2d:f00e:43d8:e852
+  IPv6 address for ens238f0np0: 2001:df0:92:0:98b7:4507:1572:7f73
+  IPv6 address for ens238f0np0: 2001:df0:92:0:44d4:f1f9:32da:652e
+  IPv6 address for ens238f0np0: 2001:df0:92:0:c34f:234e:8b28:b5bd
+  IPv6 address for ens238f0np0: 2001:df0:92:0:2e82:2176:52e1:aa35
+  IPv6 address for ens238f0np0: 2001:df0:92:0:4267:1641:8fe3:be77
+  IPv6 address for ens238f0np0: 2001:df0:92:0:43ba:ed1e:c911:fcf2
+  IPv6 address for ens238f0np0: 2001:df0:92:0:8683:f8f3:20ae:71ab
+  IPv6 address for ens238f0np0: 2001:df0:92:0:c959:45c:6bb3:f747
+  IPv6 address for ens238f0np0: 2001:df0:92:0:bdc:fd75:49cc:c93d
+  IPv6 address for ens238f0np0: 2001:df0:92:0:56b:63d5:a578:77cb
+  IPv6 address for ens238f0np0: 2001:df0:92:0:69:e74:2d64:c23
+  IPv6 address for ens238f0np0: 2001:df0:92:0:c5fb:b35f:8cc2:2c5a
+  IPv6 address for ens238f0np0: 2001:df0:92:0:6fcc:e6d:2f17:7e2
+  IPv6 address for ens238f0np0: 2001:df0:92:0:73ef:7ebd:8c25:6ebd
+  IPv6 address for ens238f0np0: 2001:df0:92:0:925a:8ff:fe98:5a48
+
+  => There are 2 zombie processes.
+
+ * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+   just raised the bar for easy, resilient and secure K8s cluster deployment.
+
+   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+
+Expanded Security Maintenance for Applications is not enabled.
+
+139 updates can be applied immediately.
+To see these additional updates run: apt list --upgradable
+
+21 additional security updates can be applied with ESM Apps.
+Learn more about enabling ESM Apps service at https://ubuntu.com/esm
+
+
+15 updates could not be installed automatically. For more details,
+see /var/log/unattended-upgrades/unattended-upgrades.log
+
+*** System restart required ***
+Last login: Sun May 24 13:11:16 2026 from 172.27.27.179
+(base) debkanta@anviksha:~$ nvidia-smi --query-gpu=index,memory.free,memory.total --format=csv
+index, memory.free [MiB], memory.total [MiB]
+0, 4802 MiB, 49140 MiB
+1, 18117 MiB, 49140 MiB
+2, 41126 MiB, 49140 MiB
+3, 3178 MiB, 49140 MiB
+4, 2172 MiB, 49140 MiB
+5, 24519 MiB, 49140 MiB
+6, 952 MiB, 49140 MiB
+7, 33694 MiB, 49140 MiB
+(base) debkanta@anviksha:~$ ls /data/debkanta/nyaya_project/data/extracted/binary_single_train/
+head -n 2 /data/debkanta/nyaya_project/data/extracted/binary_single_train/CJPE_ext_SCI_HCs_single.csv
+CJPE_ext_SCI_HCs_single.csv                         CJPE_ext_SCI_HCs_Tribunals_single.csv
+CJPE_ext_SCI_HCs_Tribunals_daily_orders_single.csv  CJPE_ext_SCI_single_wo_RoD.csv
+filename,text,label
+Tripura_HC_2018_2026,"the qualifying examination but as informed to this Court there is no provision under the which may authorize to grant relaxation in the of marks secured in the qualifying examination (Class-XII).8 The thrust of of the petitioners counsel is that there is no or on the part of the petitioner and the mark sheet of his qualifying examination was submitted to the authorities and with permission appeared in the common entrance examination and after he has been admitted in the academic 2016-17 on qualifying in the common entrance examination and completed part of the BDS course almost of year and a half, cancelling his admission at this stage will certainly be very harsh to him more so when he was never at fault and in the absence of a case of on the part of the petitioner at least there appears no reason for Page 8 of 9 cancellation of his admission in the BDS course of the academic 2016-17.9 The of the petitioners counsel on the face of it is without substance for the reason that the Dental Council of India in its Regulation 2007 has prescribed the benchmark of 50 (PCB) in the qualifying examination (Class- XII) which the student is supposed to hold while taking a decision to appear in the competitive entrance examination and these are regulations on the Website and provided in the form of a Brochure with the application form and it is for the student to take a self decision to be admitted to the BDS course holding qualifying mark of 50 (PCB) in the qualifying XII) for appearing in the competitive entrance examination and what being pleaded is an 10 At the same time, it was from the petitioner to be vigilant in taking his own decision as to whether he was qualified to appear in the competitive entrance examination in terms of the Regulations 2007 and having no on his part will not come to his rescue and if this Court considers his request for granting him one time relaxation to which the college has also in the opinion of this Court will be in to the Regulations 2007 and once the council has taken a decision for cancellation of his admission in 2017 still he was allowed to continue by the it was on his own peril and any order if passed by this Court as prayed will certainly apart from being in Page 9 of 9 to the Regulations 2007 will restore the which once pointed out and taken note of by the council, took a decision for cancellation and this Court would not like to its inherent u Art.226 of the of India to restore the which brought to the notice of the council and rectified at the later stage.",0
+(base) debkanta@anviksha:~$ conda create -n sedd python=3.10 -y
+conda activate sedd
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+pip install transformers datasets scikit-learn pandas tqdm accelerate
+2 channel Terms of Service accepted
+Channels:
+ - defaults
+Platform: linux-64
+Collecting package metadata (repodata.json): done
+Solving environment: done
+
+
+==> WARNING: A newer version of conda exists. <==
+    current version: 26.3.2
+    latest version: 26.5.0
+
+Please update conda by running
+
+    $ conda update -n base -c defaults conda
+
+
+
+## Package Plan ##
+
+  environment location: /home/debkanta/miniconda3/envs/sedd
+
+  added / updated specs:
+    - python=3.10
+
+
+The following NEW packages will be INSTALLED:
+
+  _libgcc_mutex      pkgs/main/linux-64::_libgcc_mutex-0.1-main
+  _openmp_mutex      pkgs/main/linux-64::_openmp_mutex-5.1-52_gnu
+  bzip2              pkgs/main/linux-64::bzip2-1.0.8-h5eee18b_6
+  ca-certificates    pkgs/main/linux-64::ca-certificates-2026.5.14-h06a4308_0
+  ld_impl_linux-64   pkgs/main/linux-64::ld_impl_linux-64-2.44-h9e0c5a2_3
+  libexpat           pkgs/main/linux-64::libexpat-2.8.0-h7354ed3_0
+  libffi             pkgs/main/linux-64::libffi-3.4.8-hc5d346e_2
+  libgcc             pkgs/main/linux-64::libgcc-15.2.0-h69a1729_8
+  libgcc-ng          pkgs/main/linux-64::libgcc-ng-15.2.0-h166f726_8
+  libnsl             pkgs/main/linux-64::libnsl-2.0.0-h5eee18b_0
+  libstdcxx          pkgs/main/linux-64::libstdcxx-15.2.0-h39759b7_8
+  libuuid            pkgs/main/linux-64::libuuid-1.41.5-h5eee18b_0
+  libxcb             pkgs/main/linux-64::libxcb-1.17.0-h9b100fa_0
+  libzlib            pkgs/main/linux-64::libzlib-1.3.1-h47b2149_1
+  ncurses            pkgs/main/linux-64::ncurses-6.5-h7934f7d_0
+  openssl            pkgs/main/linux-64::openssl-3.5.6-h1b28b03_0
+  packaging          pkgs/main/linux-64::packaging-26.0-py310h06a4308_0
+  pip                pkgs/main/noarch::pip-26.0.1-pyhc872135_1
+  pthread-stubs      pkgs/main/linux-64::pthread-stubs-0.3-h0ce48e5_1
+  python             pkgs/main/linux-64::python-3.10.20-h741d88c_0
+  readline           pkgs/main/linux-64::readline-8.3-hc2a1206_0
+  setuptools         pkgs/main/linux-64::setuptools-82.0.1-py310h06a4308_0
+  sqlite             pkgs/main/linux-64::sqlite-3.51.2-h3e8d24a_0
+  tk                 pkgs/main/linux-64::tk-8.6.15-h54e0aa7_0
+  tzdata             pkgs/main/noarch::tzdata-2026a-he532380_0
+  wheel              pkgs/main/linux-64::wheel-0.46.3-py310h06a4308_0
+  xorg-libx11        pkgs/main/linux-64::xorg-libx11-1.8.12-h9b100fa_1
+  xorg-libxau        pkgs/main/linux-64::xorg-libxau-1.0.12-h9b100fa_0
+  xorg-libxdmcp      pkgs/main/linux-64::xorg-libxdmcp-1.1.5-h9b100fa_0
+  xorg-xorgproto     pkgs/main/linux-64::xorg-xorgproto-2024.1-h5eee18b_1
+  xz                 pkgs/main/linux-64::xz-5.8.2-h448239c_0
+  zlib               pkgs/main/linux-64::zlib-1.3.1-h47b2149_1
+
+
+
+Downloading and Extracting Packages:
+
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+#
+# To activate this environment, use
+#
+#     $ conda activate sedd
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
+Looking in indexes: https://download.pytorch.org/whl/cu118
+Collecting torch
+  Using cached https://download-r2.pytorch.org/whl/cu118/torch-2.7.1%2Bcu118-cp310-cp310-manylinux_2_28_x86_64.whl.metadata (28 kB)
+Collecting torchvision
+  Using cached https://download-r2.pytorch.org/whl/cu118/torchvision-0.22.1%2Bcu118-cp310-cp310-manylinux_2_28_x86_64.whl.metadata (6.1 kB)
+Collecting torchaudio
+  Using cached https://download-r2.pytorch.org/whl/cu118/torchaudio-2.7.1%2Bcu118-cp310-cp310-manylinux_2_28_x86_64.whl.metadata (6.6 kB)
+Collecting filelock (from torch)
+  Using cached filelock-3.29.0-py3-none-any.whl.metadata (2.0 kB)
+Collecting typing-extensions>=4.10.0 (from torch)
+  Using cached https://download.pytorch.org/whl/typing_extensions-4.15.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting sympy>=1.13.3 (from torch)
+  Using cached sympy-1.14.0-py3-none-any.whl.metadata (12 kB)
+Collecting networkx (from torch)
+  Using cached networkx-3.4.2-py3-none-any.whl.metadata (6.3 kB)
+Collecting jinja2 (from torch)
+  Using cached https://download.pytorch.org/whl/jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+Collecting fsspec (from torch)
+  Using cached fsspec-2026.4.0-py3-none-any.whl.metadata (10 kB)
+Collecting nvidia-cuda-nvrtc-cu11==11.8.89 (from torch)
+  Using cached https://download.pytorch.org/whl/cu118/nvidia_cuda_nvrtc_cu11-11.8.89-py3-none-manylinux1_x86_64.whl (23.2 MB)
+Collecting nvidia-cuda-runtime-cu11==11.8.89 (from torch)
+  Using cached https://download.pytorch.org/whl/cu118/nvidia_cuda_runtime_cu11-11.8.89-py3-none-manylinux1_x86_64.whl (875 kB)
+Collecting nvidia-cuda-cupti-cu11==11.8.87 (from torch)
+  Using cached https://download.pytorch.org/whl/cu118/nvidia_cuda_cupti_cu11-11.8.87-py3-none-manylinux1_x86_64.whl (13.1 MB)
+Collecting nvidia-cudnn-cu11==9.1.0.70 (from torch)
+  Using cached https://download.pytorch.org/whl/cu118/nvidia_cudnn_cu11-9.1.0.70-py3-none-manylinux2014_x86_64.whl (663.9 MB)
+Collecting nvidia-cublas-cu11==11.11.3.6 (from torch)
+  Using cached https://download.pytorch.org/whl/cu118/nvidia_cublas_cu11-11.11.3.6-py3-none-manylinux1_x86_64.whl (417.9 MB)
+Collecting nvidia-cufft-cu11==10.9.0.58 (from torch)
+  Using cached https://download.pytorch.org/whl/cu118/nvidia_cufft_cu11-10.9.0.58-py3-none-manylinux1_x86_64.whl (168.4 MB)
+Collecting nvidia-curand-cu11==10.3.0.86 (from torch)
+  Using cached https://download.pytorch.org/whl/cu118/nvidia_curand_cu11-10.3.0.86-py3-none-manylinux1_x86_64.whl (58.1 MB)
+Collecting nvidia-cusolver-cu11==11.4.1.48 (from torch)
+  Using cached https://download.pytorch.org/whl/cu118/nvidia_cusolver_cu11-11.4.1.48-py3-none-manylinux1_x86_64.whl (128.2 MB)
+Collecting nvidia-cusparse-cu11==11.7.5.86 (from torch)
+  Using cached https://download.pytorch.org/whl/cu118/nvidia_cusparse_cu11-11.7.5.86-py3-none-manylinux1_x86_64.whl (204.1 MB)
+Collecting nvidia-nccl-cu11==2.21.5 (from torch)
+  Using cached https://download.pytorch.org/whl/cu118/nvidia_nccl_cu11-2.21.5-py3-none-manylinux2014_x86_64.whl (147.8 MB)
+Collecting nvidia-nvtx-cu11==11.8.86 (from torch)
+  Using cached https://download.pytorch.org/whl/cu118/nvidia_nvtx_cu11-11.8.86-py3-none-manylinux1_x86_64.whl (99 kB)
+Collecting triton==3.3.1 (from torch)
+  Using cached https://download-r2.pytorch.org/whl/triton-3.3.1-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (1.5 kB)
+Requirement already satisfied: setuptools>=40.8.0 in ./miniconda3/envs/sedd/lib/python3.10/site-packages (from triton==3.3.1->torch) (82.0.1)
+Collecting numpy (from torchvision)
+  Using cached numpy-2.2.6-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (62 kB)
+Collecting pillow!=8.3.*,>=5.3.0 (from torchvision)
+  Using cached pillow-12.2.0-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (8.8 kB)
+Collecting mpmath<1.4,>=1.1.0 (from sympy>=1.13.3->torch)
+  Using cached mpmath-1.3.0-py3-none-any.whl.metadata (8.6 kB)
+Collecting MarkupSafe>=2.0 (from jinja2->torch)
+  Using cached https://download.pytorch.org/whl/markupsafe-3.0.3-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.7 kB)
+Using cached https://download-r2.pytorch.org/whl/cu118/torch-2.7.1%2Bcu118-cp310-cp310-manylinux_2_28_x86_64.whl (905.3 MB)
+Using cached https://download-r2.pytorch.org/whl/triton-3.3.1-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (155.6 MB)
+Using cached https://download-r2.pytorch.org/whl/cu118/torchvision-0.22.1%2Bcu118-cp310-cp310-manylinux_2_28_x86_64.whl (6.7 MB)
+Using cached https://download-r2.pytorch.org/whl/cu118/torchaudio-2.7.1%2Bcu118-cp310-cp310-manylinux_2_28_x86_64.whl (3.3 MB)
+Using cached pillow-12.2.0-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (7.1 MB)
+Using cached sympy-1.14.0-py3-none-any.whl (6.3 MB)
+Using cached mpmath-1.3.0-py3-none-any.whl (536 kB)
+Using cached https://download.pytorch.org/whl/typing_extensions-4.15.0-py3-none-any.whl (44 kB)
+Using cached filelock-3.29.0-py3-none-any.whl (39 kB)
+Using cached fsspec-2026.4.0-py3-none-any.whl (203 kB)
+Using cached https://download.pytorch.org/whl/jinja2-3.1.6-py3-none-any.whl (134 kB)
+Using cached https://download.pytorch.org/whl/markupsafe-3.0.3-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (20 kB)
+Using cached networkx-3.4.2-py3-none-any.whl (1.7 MB)
+Using cached numpy-2.2.6-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (16.8 MB)
+Installing collected packages: mpmath, typing-extensions, triton, sympy, pillow, nvidia-nvtx-cu11, nvidia-nccl-cu11, nvidia-cusparse-cu11, nvidia-curand-cu11, nvidia-cufft-cu11, nvidia-cuda-runtime-cu11, nvidia-cuda-nvrtc-cu11, nvidia-cuda-cupti-cu11, nvidia-cublas-cu11, numpy, networkx, MarkupSafe, fsspec, filelock, nvidia-cusolver-cu11, nvidia-cudnn-cu11, jinja2, torch, torchvision, torchaudio
+Successfully installed MarkupSafe-3.0.3 filelock-3.29.0 fsspec-2026.4.0 jinja2-3.1.6 mpmath-1.3.0 networkx-3.4.2 numpy-2.2.6 nvidia-cublas-cu11-11.11.3.6 nvidia-cuda-cupti-cu11-11.8.87 nvidia-cuda-nvrtc-cu11-11.8.89 nvidia-cuda-runtime-cu11-11.8.89 nvidia-cudnn-cu11-9.1.0.70 nvidia-cufft-cu11-10.9.0.58 nvidia-curand-cu11-10.3.0.86 nvidia-cusolver-cu11-11.4.1.48 nvidia-cusparse-cu11-11.7.5.86 nvidia-nccl-cu11-2.21.5 nvidia-nvtx-cu11-11.8.86 pillow-12.2.0 sympy-1.14.0 torch-2.7.1+cu118 torchaudio-2.7.1+cu118 torchvision-0.22.1+cu118 triton-3.3.1 typing-extensions-4.15.0
+Collecting transformers
+  Using cached transformers-5.9.0-py3-none-any.whl.metadata (33 kB)
+Collecting datasets
+  Using cached datasets-4.8.5-py3-none-any.whl.metadata (19 kB)
+Collecting scikit-learn
+  Using cached scikit_learn-1.7.2-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (11 kB)
+Collecting pandas
+  Using cached pandas-2.3.3-cp310-cp310-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (91 kB)
+Collecting tqdm
+  Using cached tqdm-4.67.3-py3-none-any.whl.metadata (57 kB)
+Collecting accelerate
+  Using cached accelerate-1.13.0-py3-none-any.whl.metadata (19 kB)
+Collecting huggingface-hub<2.0,>=1.5.0 (from transformers)
+  Using cached huggingface_hub-1.16.1-py3-none-any.whl.metadata (14 kB)
+Requirement already satisfied: numpy>=1.17 in ./miniconda3/envs/sedd/lib/python3.10/site-packages (from transformers) (2.2.6)
+Requirement already satisfied: packaging>=20.0 in ./miniconda3/envs/sedd/lib/python3.10/site-packages (from transformers) (26.0)
+Collecting pyyaml>=5.1 (from transformers)
+  Using cached pyyaml-6.0.3-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.4 kB)
+Collecting regex>=2025.10.22 (from transformers)
+  Using cached regex-2026.5.9-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (40 kB)
+Collecting tokenizers<=0.23.0,>=0.22.0 (from transformers)
+  Using cached tokenizers-0.22.2-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (7.3 kB)
+Collecting typer (from transformers)
+  Using cached typer-0.25.1-py3-none-any.whl.metadata (15 kB)
+Collecting safetensors>=0.4.3 (from transformers)
+  Using cached safetensors-0.7.0-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.1 kB)
+Requirement already satisfied: filelock>=3.10.0 in ./miniconda3/envs/sedd/lib/python3.10/site-packages (from huggingface-hub<2.0,>=1.5.0->transformers) (3.29.0)
+Requirement already satisfied: fsspec>=2023.5.0 in ./miniconda3/envs/sedd/lib/python3.10/site-packages (from huggingface-hub<2.0,>=1.5.0->transformers) (2026.4.0)
+Collecting hf-xet<2.0.0,>=1.4.3 (from huggingface-hub<2.0,>=1.5.0->transformers)
+  Using cached hf_xet-1.5.0-cp37-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (4.9 kB)
+Collecting httpx<1,>=0.23.0 (from huggingface-hub<2.0,>=1.5.0->transformers)
+  Using cached httpx-0.28.1-py3-none-any.whl.metadata (7.1 kB)
+Requirement already satisfied: typing-extensions>=4.1.0 in ./miniconda3/envs/sedd/lib/python3.10/site-packages (from huggingface-hub<2.0,>=1.5.0->transformers) (4.15.0)
+Collecting anyio (from httpx<1,>=0.23.0->huggingface-hub<2.0,>=1.5.0->transformers)
+  Using cached anyio-4.13.0-py3-none-any.whl.metadata (4.5 kB)
+Collecting certifi (from httpx<1,>=0.23.0->huggingface-hub<2.0,>=1.5.0->transformers)
+  Using cached certifi-2026.5.20-py3-none-any.whl.metadata (2.5 kB)
+Collecting httpcore==1.* (from httpx<1,>=0.23.0->huggingface-hub<2.0,>=1.5.0->transformers)
+  Using cached httpcore-1.0.9-py3-none-any.whl.metadata (21 kB)
+Collecting idna (from httpx<1,>=0.23.0->huggingface-hub<2.0,>=1.5.0->transformers)
+  Using cached idna-3.16-py3-none-any.whl.metadata (6.4 kB)
+Collecting h11>=0.16 (from httpcore==1.*->httpx<1,>=0.23.0->huggingface-hub<2.0,>=1.5.0->transformers)
+  Using cached h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+Collecting pyarrow>=21.0.0 (from datasets)
+  Using cached pyarrow-24.0.0-cp310-cp310-manylinux_2_28_x86_64.whl.metadata (3.0 kB)
+Collecting dill<0.4.2,>=0.3.0 (from datasets)
+  Using cached dill-0.4.1-py3-none-any.whl.metadata (10 kB)
+Collecting requests>=2.32.2 (from datasets)
+  Using cached requests-2.34.2-py3-none-any.whl.metadata (4.8 kB)
+Collecting xxhash (from datasets)
+  Using cached xxhash-3.7.0-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (13 kB)
+Collecting multiprocess<0.70.20 (from datasets)
+  Using cached multiprocess-0.70.19-py310-none-any.whl.metadata (7.5 kB)
+Collecting fsspec>=2023.5.0 (from huggingface-hub<2.0,>=1.5.0->transformers)
+  Using cached fsspec-2026.2.0-py3-none-any.whl.metadata (10 kB)
+Collecting aiohttp!=4.0.0a0,!=4.0.0a1 (from fsspec[http]<=2026.2.0,>=2023.1.0->datasets)
+  Using cached aiohttp-3.13.5-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (8.1 kB)
+Collecting scipy>=1.8.0 (from scikit-learn)
+  Using cached scipy-1.15.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (61 kB)
+Collecting joblib>=1.2.0 (from scikit-learn)
+  Using cached joblib-1.5.3-py3-none-any.whl.metadata (5.5 kB)
+Collecting threadpoolctl>=3.1.0 (from scikit-learn)
+  Using cached threadpoolctl-3.6.0-py3-none-any.whl.metadata (13 kB)
+Collecting python-dateutil>=2.8.2 (from pandas)
+  Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting pytz>=2020.1 (from pandas)
+  Using cached pytz-2026.2-py2.py3-none-any.whl.metadata (22 kB)
+Collecting tzdata>=2022.7 (from pandas)
+  Using cached tzdata-2026.2-py2.py3-none-any.whl.metadata (1.4 kB)
+Collecting psutil (from accelerate)
+  Using cached psutil-7.2.2-cp36-abi3-manylinux2010_x86_64.manylinux_2_12_x86_64.manylinux_2_28_x86_64.whl.metadata (22 kB)
+Requirement already satisfied: torch>=2.0.0 in ./miniconda3/envs/sedd/lib/python3.10/site-packages (from accelerate) (2.7.1+cu118)
+Collecting aiohappyeyeballs>=2.5.0 (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2026.2.0,>=2023.1.0->datasets)
+  Using cached aiohappyeyeballs-2.6.2-py3-none-any.whl.metadata (5.9 kB)
+Collecting aiosignal>=1.4.0 (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2026.2.0,>=2023.1.0->datasets)
+  Using cached aiosignal-1.4.0-py3-none-any.whl.metadata (3.7 kB)
+Collecting async-timeout<6.0,>=4.0 (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2026.2.0,>=2023.1.0->datasets)
+  Using cached async_timeout-5.0.1-py3-none-any.whl.metadata (5.1 kB)
+Collecting attrs>=17.3.0 (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2026.2.0,>=2023.1.0->datasets)
+  Using cached attrs-26.1.0-py3-none-any.whl.metadata (8.8 kB)
+Collecting frozenlist>=1.1.1 (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2026.2.0,>=2023.1.0->datasets)
+  Using cached frozenlist-1.8.0-cp310-cp310-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (20 kB)
+Collecting multidict<7.0,>=4.5 (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2026.2.0,>=2023.1.0->datasets)
+  Using cached multidict-6.7.1-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (5.3 kB)
+Collecting propcache>=0.2.0 (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2026.2.0,>=2023.1.0->datasets)
+  Using cached propcache-0.5.2-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (16 kB)
+Collecting yarl<2.0,>=1.17.0 (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]<=2026.2.0,>=2023.1.0->datasets)
+  Using cached yarl-1.24.2-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (94 kB)
+Collecting six>=1.5 (from python-dateutil>=2.8.2->pandas)
+  Using cached six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Collecting charset_normalizer<4,>=2 (from requests>=2.32.2->datasets)
+  Using cached charset_normalizer-3.4.7-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (40 kB)
+Collecting urllib3<3,>=1.26 (from requests>=2.32.2->datasets)
+  Using cached urllib3-2.7.0-py3-none-any.whl.metadata (6.9 kB)
+Requirement already satisfied: sympy>=1.13.3 in ./miniconda3/envs/sedd/lib/python3.10/site-packages (from torch>=2.0.0->accelerate) (1.14.0)
+Requirement already satisfied: networkx in ./miniconda3/envs/sedd/lib/python3.10/site-packages (from torch>=2.0.0->accelerate) (3.4.2)
+Requirement already satisfied: jinja2 in ./miniconda3/envs/sedd/lib/python3.10/site-packages (from torch>=2.0.0->accelerate) (3.1.6)
+Requirement already satisfied: nvidia-cuda-nvrtc-cu11==11.8.89 in ./miniconda3/envs/sedd/lib/python3.10/site-packages (from torch>=2.0.0->accelerate) (11.8.89)
+Requirement already satisfied: nvidia-cuda-runtime-cu11==11.8.89 in ./miniconda3/envs/sedd/lib/python3.10/site-packages (from torch>=2.0.0->accelerate) (11.8.89)
+Requirement already satisfied: nvidia-cuda-cupti-cu11==11.8.87 in ./miniconda3/envs/sedd/lib/python3.10/site-packages (from torch>=2.0.0->accelerate) (11.8.87)
+Requirement already satisfied: nvidia-cudnn-cu11==9.1.0.70 in ./miniconda3/envs/sedd/lib/python3.10/site-packages (from torch>=2.0.0->accelerate) (9.1.0.70)
+Requirement already satisfied: nvidia-cublas-cu11==11.11.3.6 in ./miniconda3/envs/sedd/lib/python3.10/site-packages (from torch>=2.0.0->accelerate) (11.11.3.6)
+Requirement already satisfied: nvidia-cufft-cu11==10.9.0.58 in ./miniconda3/envs/sedd/lib/python3.10/site-packages (from torch>=2.0.0->accelerate) (10.9.0.58)
+Requirement already satisfied: nvidia-curand-cu11==10.3.0.86 in ./miniconda3/envs/sedd/lib/python3.10/site-packages (from torch>=2.0.0->accelerate) (10.3.0.86)
+Requirement already satisfied: nvidia-cusolver-cu11==11.4.1.48 in ./miniconda3/envs/sedd/lib/python3.10/site-packages (from torch>=2.0.0->accelerate) (11.4.1.48)
+Requirement already satisfied: nvidia-cusparse-cu11==11.7.5.86 in ./miniconda3/envs/sedd/lib/python3.10/site-packages (from torch>=2.0.0->accelerate) (11.7.5.86)
+Requirement already satisfied: nvidia-nccl-cu11==2.21.5 in ./miniconda3/envs/sedd/lib/python3.10/site-packages (from torch>=2.0.0->accelerate) (2.21.5)
+Requirement already satisfied: nvidia-nvtx-cu11==11.8.86 in ./miniconda3/envs/sedd/lib/python3.10/site-packages (from torch>=2.0.0->accelerate) (11.8.86)
+Requirement already satisfied: triton==3.3.1 in ./miniconda3/envs/sedd/lib/python3.10/site-packages (from torch>=2.0.0->accelerate) (3.3.1)
+Requirement already satisfied: setuptools>=40.8.0 in ./miniconda3/envs/sedd/lib/python3.10/site-packages (from triton==3.3.1->torch>=2.0.0->accelerate) (82.0.1)
+Requirement already satisfied: mpmath<1.4,>=1.1.0 in ./miniconda3/envs/sedd/lib/python3.10/site-packages (from sympy>=1.13.3->torch>=2.0.0->accelerate) (1.3.0)
+Collecting click>=8.2.1 (from typer->transformers)
+  Using cached click-8.4.1-py3-none-any.whl.metadata (2.6 kB)
+Collecting shellingham>=1.3.0 (from typer->transformers)
+  Using cached shellingham-1.5.4-py2.py3-none-any.whl.metadata (3.5 kB)
+Collecting rich>=13.8.0 (from typer->transformers)
+  Using cached rich-15.0.0-py3-none-any.whl.metadata (18 kB)
+Collecting annotated-doc>=0.0.2 (from typer->transformers)
+  Using cached annotated_doc-0.0.4-py3-none-any.whl.metadata (6.6 kB)
+Collecting markdown-it-py>=2.2.0 (from rich>=13.8.0->typer->transformers)
+  Using cached markdown_it_py-4.2.0-py3-none-any.whl.metadata (7.4 kB)
+Collecting pygments<3.0.0,>=2.13.0 (from rich>=13.8.0->typer->transformers)
+  Using cached pygments-2.20.0-py3-none-any.whl.metadata (2.5 kB)
+Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich>=13.8.0->typer->transformers)
+  Using cached mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+Collecting exceptiongroup>=1.0.2 (from anyio->httpx<1,>=0.23.0->huggingface-hub<2.0,>=1.5.0->transformers)
+  Using cached exceptiongroup-1.3.1-py3-none-any.whl.metadata (6.7 kB)
+Requirement already satisfied: MarkupSafe>=2.0 in ./miniconda3/envs/sedd/lib/python3.10/site-packages (from jinja2->torch>=2.0.0->accelerate) (3.0.3)
+Using cached transformers-5.9.0-py3-none-any.whl (10.8 MB)
+Using cached huggingface_hub-1.16.1-py3-none-any.whl (668 kB)
+Using cached hf_xet-1.5.0-cp37-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (4.5 MB)
+Using cached httpx-0.28.1-py3-none-any.whl (73 kB)
+Using cached httpcore-1.0.9-py3-none-any.whl (78 kB)
+Using cached tokenizers-0.22.2-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.3 MB)
+Using cached datasets-4.8.5-py3-none-any.whl (528 kB)
+Using cached dill-0.4.1-py3-none-any.whl (120 kB)
+Using cached fsspec-2026.2.0-py3-none-any.whl (202 kB)
+Using cached multiprocess-0.70.19-py310-none-any.whl (134 kB)
+Using cached scikit_learn-1.7.2-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (9.7 MB)
+Using cached pandas-2.3.3-cp310-cp310-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (12.8 MB)
+Using cached tqdm-4.67.3-py3-none-any.whl (78 kB)
+Using cached accelerate-1.13.0-py3-none-any.whl (383 kB)
+Using cached aiohttp-3.13.5-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (1.7 MB)
+Using cached async_timeout-5.0.1-py3-none-any.whl (6.2 kB)
+Using cached multidict-6.7.1-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (243 kB)
+Using cached yarl-1.24.2-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (106 kB)
+Using cached aiohappyeyeballs-2.6.2-py3-none-any.whl (15 kB)
+Using cached aiosignal-1.4.0-py3-none-any.whl (7.5 kB)
+Using cached attrs-26.1.0-py3-none-any.whl (67 kB)
+Using cached frozenlist-1.8.0-cp310-cp310-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (219 kB)
+Using cached h11-0.16.0-py3-none-any.whl (37 kB)
+Using cached idna-3.16-py3-none-any.whl (74 kB)
+Using cached joblib-1.5.3-py3-none-any.whl (309 kB)
+Using cached propcache-0.5.2-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (60 kB)
+Using cached pyarrow-24.0.0-cp310-cp310-manylinux_2_28_x86_64.whl (48.8 MB)
+Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Using cached pytz-2026.2-py2.py3-none-any.whl (510 kB)
+Using cached pyyaml-6.0.3-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (770 kB)
+Using cached regex-2026.5.9-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (794 kB)
+Using cached requests-2.34.2-py3-none-any.whl (73 kB)
+Using cached charset_normalizer-3.4.7-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (216 kB)
+Using cached urllib3-2.7.0-py3-none-any.whl (131 kB)
+Using cached certifi-2026.5.20-py3-none-any.whl (134 kB)
+Using cached safetensors-0.7.0-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (507 kB)
+Using cached scipy-1.15.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (37.7 MB)
+Using cached six-1.17.0-py2.py3-none-any.whl (11 kB)
+Using cached threadpoolctl-3.6.0-py3-none-any.whl (18 kB)
+Using cached typer-0.25.1-py3-none-any.whl (58 kB)
+Using cached annotated_doc-0.0.4-py3-none-any.whl (5.3 kB)
+Using cached click-8.4.1-py3-none-any.whl (116 kB)
+Using cached rich-15.0.0-py3-none-any.whl (310 kB)
+Using cached pygments-2.20.0-py3-none-any.whl (1.2 MB)
+Using cached markdown_it_py-4.2.0-py3-none-any.whl (91 kB)
+Using cached mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+Using cached shellingham-1.5.4-py2.py3-none-any.whl (9.8 kB)
+Using cached tzdata-2026.2-py2.py3-none-any.whl (349 kB)
+Using cached anyio-4.13.0-py3-none-any.whl (114 kB)
+Using cached exceptiongroup-1.3.1-py3-none-any.whl (16 kB)
+Using cached psutil-7.2.2-cp36-abi3-manylinux2010_x86_64.manylinux_2_12_x86_64.manylinux_2_28_x86_64.whl (155 kB)
+Using cached xxhash-3.7.0-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (193 kB)
+Installing collected packages: pytz, xxhash, urllib3, tzdata, tqdm, threadpoolctl, six, shellingham, scipy, safetensors, regex, pyyaml, pygments, pyarrow, psutil, propcache, multidict, mdurl, joblib, idna, hf-xet, h11, fsspec, frozenlist, exceptiongroup, dill, click, charset_normalizer, certifi, attrs, async-timeout, annotated-doc, aiohappyeyeballs, yarl, scikit-learn, requests, python-dateutil, multiprocess, markdown-it-py, httpcore, anyio, aiosignal, rich, pandas, httpx, aiohttp, typer, huggingface-hub, tokenizers, datasets, accelerate, transformers
+  Attempting uninstall: fsspec
+    Found existing installation: fsspec 2026.4.0
+    Uninstalling fsspec-2026.4.0:
+      Successfully uninstalled fsspec-2026.4.0
+Successfully installed accelerate-1.13.0 aiohappyeyeballs-2.6.2 aiohttp-3.13.5 aiosignal-1.4.0 annotated-doc-0.0.4 anyio-4.13.0 async-timeout-5.0.1 attrs-26.1.0 certifi-2026.5.20 charset_normalizer-3.4.7 click-8.4.1 datasets-4.8.5 dill-0.4.1 exceptiongroup-1.3.1 frozenlist-1.8.0 fsspec-2026.2.0 h11-0.16.0 hf-xet-1.5.0 httpcore-1.0.9 httpx-0.28.1 huggingface-hub-1.16.1 idna-3.16 joblib-1.5.3 markdown-it-py-4.2.0 mdurl-0.1.2 multidict-6.7.1 multiprocess-0.70.19 pandas-2.3.3 propcache-0.5.2 psutil-7.2.2 pyarrow-24.0.0 pygments-2.20.0 python-dateutil-2.9.0.post0 pytz-2026.2 pyyaml-6.0.3 regex-2026.5.9 requests-2.34.2 rich-15.0.0 safetensors-0.7.0 scikit-learn-1.7.2 scipy-1.15.3 shellingham-1.5.4 six-1.17.0 threadpoolctl-3.6.0 tokenizers-0.22.2 tqdm-4.67.3 transformers-5.9.0 typer-0.25.1 tzdata-2026.2 urllib3-2.7.0 xxhash-3.7.0 yarl-1.24.2
+(sedd) debkanta@anviksha:~$ mkdir -p /data/debkanta/nyaya_project/sedd
+cat > /data/debkanta/nyaya_project/sedd/train.py << 'EOF'
+import os
+os.environ["CUDA_VISIBLE_DEVICES"] = "7"
+
+import torch
+import pandas as pd
+import numpy as np
+from torch.utils.data import Dataset, DataLoader
+from transformers import AutoTokenizer, AutoModelForMaskedLM, get_cosine_schedule_with_warmup
+from torch.optim import AdamW
+from sklearn.metrics import accuracy_score, f1_score, classification_report
+from tqdm import tqdm
+
+# ── Config ────────────────────────────────────────────
+DEVICE      = "cuda:0"
+BACKBONE    = "bert-base-uncased"
+MAX_LEN     = 512
+BATCH_SIZE  = 16
+GRAD_ACCUM  = 4
+LR          = 2e-5
+EPOCHS      = 10
+PATIENCE    = 3
+MASK_PROB   = 0.15
+NUM_CLASSES = 2
+
+TRAIN_FILES = [
+    "/data/debkanta/nyaya_project/data/extracted/binary_single_train/CJPE_ext_SCI_HCs_single.csv",
+    "/data/debkanta/nyaya_project/data/extracted/binary_single_train/CJPE_ext_SCI_HCs_Tribunals_single.csv",
+    "/data/debkanta/nyaya_project/data/extracted/binary_single_train/CJPE_ext_SCI_single_wo_RoD.csv",
+    "/data/debkanta/nyaya_project/data/extracted/binary_single_train/CJPE_ext_SCI_HCs_Tribunals_daily_orders_single.csv",
+]
+
+CKPT_DIR = "/data/debkanta/nyaya_project/sedd/checkpoints"
+LOG_FILE  = "/data/debkanta/nyaya_project/sedd/train.log"
+os.makedirs(CKPT_DIR, exist_ok=True)
+
+def log(msg):
+    print(msg, flush=True)
+    with open(LOG_FILE, "a") as f:
+        f.write(msg + "\n")
+
+# ── Data ──────────────────────────────────────────────
+def load_data(files, max_per_file=150000):
+    dfs = []
+    for f in files:
+        if not os.path.exists(f):
+            log(f"  SKIP (not found): {f}")
+            continue
+        df = pd.read_csv(f, usecols=["text", "label"])
+        df = df.dropna(subset=["text", "label"])
+        df["label"] = df["label"].astype(int)
+        df = df[df["label"].isin([0, 1])]
+        df = df.sample(min(len(df), max_per_file), random_state=42)
+        log(f"  {os.path.basename(f)}: {len(df):,} rows | {df['label'].value_counts().to_dict()}")
+        dfs.append(df)
+    combined = pd.concat(dfs, ignore_index=True).sample(frac=1, random_state=42).reset_index(drop=True)
+EOF log("="*60)vement: {best_acc - 76.05:+.2f}%")%")/{PATIENCE})")")heduler, mask_token_id, epoch)
+(sedd) debkanta@anviksha:~$ mkdir -p /data/debkanta/nyaya_project/sedd
+cat > /data/debkanta/nyaya_project/sedd/train.py << 'EOF'
+import os
+os.environ["CUDA_VISIBLE_DEVICES"] = "7"
+
+import torch
+import pandas as pd
+import numpy as np
+from torch.utils.data import Dataset, DataLoader
+from transformers import AutoTokenizer, AutoModelForMaskedLM, get_cosine_schedule_with_warmup
+from torch.optim import AdamW
+from sklearn.metrics import accuracy_score, f1_score, classification_report
+from tqdm import tqdm
+
+# ── Config ────────────────────────────────────────────
+DEVICE      = "cuda:0"
+BACKBONE    = "bert-base-uncased"
+MAX_LEN     = 512
+BATCH_SIZE  = 16
+GRAD_ACCUM  = 4
+LR          = 2e-5
+EPOCHS      = 10
+PATIENCE    = 3
+MASK_PROB   = 0.15
+NUM_CLASSES = 2
+
+TRAIN_FILES = [
+    "/data/debkanta/nyaya_project/data/extracted/binary_single_train/CJPE_ext_SCI_HCs_single.csv",
+    "/data/debkanta/nyaya_project/data/extracted/binary_single_train/CJPE_ext_SCI_HCs_Tribunals_single.csv",
+    "/data/debkanta/nyaya_project/data/extracted/binary_single_train/CJPE_ext_SCI_single_wo_RoD.csv",
+    "/data/debkanta/nyaya_project/data/extracted/binary_single_train/CJPE_ext_SCI_HCs_Tribunals_daily_orders_single.csv",
+]
+
+CKPT_DIR = "/data/debkanta/nyaya_project/sedd/checkpoints"
+LOG_FILE  = "/data/debkanta/nyaya_project/sedd/train.log"
+os.makedirs(CKPT_DIR, exist_ok=True)
+
+def log(msg):
+    print(msg, flush=True)
+    with open(LOG_FILE, "a") as f:
+        f.write(msg + "\n")
+
+# ── Data ──────────────────────────────────────────────
+def load_data(files, max_per_file=150000):
+    dfs = []
+    for f in files:
+        if not os.path.exists(f):
+            log(f"  SKIP (not found): {f}")
+            continue
+        df = pd.read_csv(f, usecols=["text", "label"])
+        df = df.dropna(subset=["text", "label"])
+        df["label"] = df["label"].astype(int)
+        df = df[df["label"].isin([0, 1])]
+        df = df.sample(min(len(df), max_per_file), random_state=42)
+        log(f"  {os.path.basename(f)}: {len(df):,} rows | {df['label'].value_counts().to_dict()}")
+        dfs.append(df)
+    combined = pd.concat(dfs, ignore_index=True).sample(frac=1, random_state=42).reset_index(drop=True)
+EOF log("="*60)vement: {best_acc - 76.05:+.2f}%")%")/{PATIENCE})")")heduler, mask_token_id, epoch)
+(sedd) debkanta@anviksha:~$ conda activate sedd
+screen -S nyaya
+cd /data/debkanta/nyaya_project/sedd
+python3 train.py 2>&1 | tee train.log
+[detached from 4127508.nyaya]
+============================================================
+NyayaDiffusion — Binary Legal Judgment Prediction
+Backbone: bert-base-uncased | Device: cuda:0
+============================================================
+
+Loading data...
+  CJPE_ext_SCI_HCs_single.csv: 150,000 rows | {0: 77839, 1: 72161}
+  CJPE_ext_SCI_HCs_Tribunals_single.csv: 150,000 rows | {0: 75719, 1: 74281}
+  CJPE_ext_SCI_single_wo_RoD.csv: 20,712 rows | {1: 10520, 0: 10192}
+  CJPE_ext_SCI_HCs_Tribunals_daily_orders_single.csv: 150,000 rows | {0: 76089, 1: 73911}
+  Total: 470,712 examples
+Train: 423,641 | Val: 47,071
+
+Building model...
+Loading weights: 100%|██████████| 202/202 [00:00<00:00, 10565.52it/s]
+[transformers] BertForMaskedLM LOAD REPORT from: bert-base-uncased
+Key                         | Status     |  |
+----------------------------+------------+--+-
+bert.pooler.dense.weight    | UNEXPECTED |  |
+bert.pooler.dense.bias      | UNEXPECTED |  |
+cls.seq_relationship.weight | UNEXPECTED |  |
+cls.seq_relationship.bias   | UNEXPECTED |  |
+
+Notes:
+- UNEXPECTED:   can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Parameters: 109.8M
+
+========================================
+Epoch 1/10
+========================================
+  Ep1 | Step 500/26478 | Loss 0.6942 | Acc 50.95%
+screen -r nyaya
+^C
+(sedd) debkanta@anviksha:/data/debkanta/nyaya_project/sedd$ sed -i 's/BATCH_SIZE  = 16/BATCH_SIZE  = 64/' /data/debkanta/nyaya_project/sedd/train.py
+(sedd) debkanta@anviksha:/data/debkanta/nyaya_project/sedd$ screen -S nyaya2
+python3 /data/debkanta/nyaya_project/sedd/train.py 2>&1 | tee /data/debkanta/nyaya_project/sedd/train.log
+[detached from 4144629.nyaya2]
+============================================================
+NyayaDiffusion — Binary Legal Judgment Prediction
+Backbone: bert-base-uncased | Device: cuda:0
+============================================================
+
+Loading data...
+
+  CJPE_ext_SCI_HCs_single.csv: 150,000 rows | {0: 77839, 1: 72161}
+  CJPE_ext_SCI_HCs_Tribunals_single.csv: 150,000 rows | {0: 75719, 1: 74281}
+  CJPE_ext_SCI_single_wo_RoD.csv: 20,712 rows | {1: 10520, 0: 10192}
+  CJPE_ext_SCI_HCs_Tribunals_daily_orders_single.csv: 150,000 rows | {0: 76089, 1: 73911}
+  Total: 470,712 examples
+Train: 423,641 | Val: 47,071
+
+Building model...
+Loading weights: 100%|██████████| 202/202 [00:00<00:00, 9914.34it/s]
+[transformers] BertForMaskedLM LOAD REPORT from: bert-base-uncased
+Key                         | Status     |  |
+----------------------------+------------+--+-
+cls.seq_relationship.weight | UNEXPECTED |  |
+cls.seq_relationship.bias   | UNEXPECTED |  |
+bert.pooler.dense.weight    | UNEXPECTED |  |
+bert.pooler.dense.bias      | UNEXPECTED |  |
+
+Notes:
+- UNEXPECTED:   can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Parameters: 109.8M
+
+========================================
+Epoch 1/10
+========================================
+
+screen -r nyaya2
+^C
+(sedd) debkanta@anviksha:/data/debkanta/nyaya_project/sedd$ sed -i 's/num_workers=4/num_workers=0/' /data/debkanta/nyaya_project/sedd/train.py
+sed -i 's/num_workers=2/num_workers=0/' /data/debkanta/nyaya_project/sedd/train.py
+python3 /data/debkanta/nyaya_project/sedd/train.py 2>&1 | tee /data/debkanta/nyaya_project/sedd/train.log
+============================================================
+NyayaDiffusion — Binary Legal Judgment Prediction
+Backbone: bert-base-uncased | Device: cuda:0
+============================================================
+
+Loading data...
+  CJPE_ext_SCI_HCs_single.csv: 150,000 rows | {0: 77839, 1: 72161}
+  CJPE_ext_SCI_HCs_Tribunals_single.csv: 150,000 rows | {0: 75719, 1: 74281}
+  CJPE_ext_SCI_single_wo_RoD.csv: 20,712 rows | {1: 10520, 0: 10192}
+  CJPE_ext_SCI_HCs_Tribunals_daily_orders_single.csv: 150,000 rows | {0: 76089, 1: 73911}
+  Total: 470,712 examples
+Train: 423,641 | Val: 47,071
+
+Building model...
+Loading weights: 100%|██████████| 202/202 [00:00<00:00, 10935.21it/s]
+[transformers] BertForMaskedLM LOAD REPORT from: bert-base-uncased
+Key                         | Status     |  |
+----------------------------+------------+--+-
+bert.pooler.dense.bias      | UNEXPECTED |  |
+bert.pooler.dense.weight    | UNEXPECTED |  |
+cls.seq_relationship.weight | UNEXPECTED |  |
+cls.seq_relationship.bias   | UNEXPECTED |  |
+
+Notes:
+- UNEXPECTED:   can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Parameters: 109.8M
+
+========================================
+Epoch 1/10
+========================================
+sed -i 's/max_per_file=150000/max_per_file=10000/' /data/debkanta/nyaya_project/sedd/train.py
+^C
+(sedd) debkanta@anviksha:/data/debkanta/nyaya_project/sedd$ python3 /data/debkanta/nyaya_project/sedd/train.py 2>&1 | tee /data/debkanta/nyaya_project/sedd/train.log
+============================================================
+NyayaDiffusion — Binary Legal Judgment Prediction
+Backbone: bert-base-uncased | Device: cuda:0
+============================================================
+
+Loading data...
+  CJPE_ext_SCI_HCs_single.csv: 150,000 rows | {0: 77839, 1: 72161}
+  CJPE_ext_SCI_HCs_Tribunals_single.csv: 150,000 rows | {0: 75719, 1: 74281}
+  CJPE_ext_SCI_single_wo_RoD.csv: 20,712 rows | {1: 10520, 0: 10192}
+  CJPE_ext_SCI_HCs_Tribunals_daily_orders_single.csv: 150,000 rows | {0: 76089, 1: 73911}
+  Total: 470,712 examples
+Train: 423,641 | Val: 47,071
+
+Building model...
+Loading weights: 100%|██████████| 202/202 [00:00<00:00, 10305.92it/s]
+[transformers] BertForMaskedLM LOAD REPORT from: bert-base-uncased
+Key                         | Status     |  |
+----------------------------+------------+--+-
+cls.seq_relationship.weight | UNEXPECTED |  |
+bert.pooler.dense.bias      | UNEXPECTED |  |
+cls.seq_relationship.bias   | UNEXPECTED |  |
+bert.pooler.dense.weight    | UNEXPECTED |  |
+
+Notes:
+- UNEXPECTED:   can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Parameters: 109.8M
+
+========================================
+Epoch 1/10
+========================================
+^C
+(sedd) debkanta@anviksha:/data/debkanta/nyaya_project/sedd$ grep "max_per_file" /data/debkanta/nyaya_project/sedd/train.py
+def load_data(files, max_per_file=150000):
+        df = df.sample(min(len(df), max_per_file), random_state=42)
+(sedd) debkanta@anviksha:/data/debkanta/nyaya_project/sedd$ sed -i 's/def load_data(files, max_per_file=150000)/def load_data(files, max_per_file=10000)/' /data/debkanta/nyaya_project/sedd/train.py
+grep "max_per_file" /data/debkanta/nyaya_project/sedd/train.py
+def load_data(files, max_per_file=10000):
+        df = df.sample(min(len(df), max_per_file), random_state=42)
+(sedd) debkanta@anviksha:/data/debkanta/nyaya_project/sedd$ python3 /data/debkanta/nyaya_project/sedd/train.py 2>&1 | tee /data/debkanta/nyaya_project/sedd/train.log
+============================================================
+NyayaDiffusion — Binary Legal Judgment Prediction
+Backbone: bert-base-uncased | Device: cuda:0
+============================================================
+
+Loading data...
+  CJPE_ext_SCI_HCs_single.csv: 10,000 rows | {0: 5219, 1: 4781}
+  CJPE_ext_SCI_HCs_Tribunals_single.csv: 10,000 rows | {0: 5013, 1: 4987}
+  CJPE_ext_SCI_single_wo_RoD.csv: 10,000 rows | {1: 5107, 0: 4893}
+  CJPE_ext_SCI_HCs_Tribunals_daily_orders_single.csv: 10,000 rows | {0: 5090, 1: 4910}
+  Total: 40,000 examples
+Train: 36,000 | Val: 4,000
+
+Building model...
+Loading weights: 100%|██████████| 202/202 [00:00<00:00, 9789.02it/s]
+[transformers] BertForMaskedLM LOAD REPORT from: bert-base-uncased
+Key                         | Status     |  |
+----------------------------+------------+--+-
+cls.seq_relationship.weight | UNEXPECTED |  |
+bert.pooler.dense.weight    | UNEXPECTED |  |
+cls.seq_relationship.bias   | UNEXPECTED |  |
+bert.pooler.dense.bias      | UNEXPECTED |  |
+
+Notes:
+- UNEXPECTED:   can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Parameters: 109.8M
+
+========================================
+Epoch 1/10
+========================================
+^C
+(sedd) debkanta@anviksha:/data/debkanta/nyaya_project/sedd$ screen -r nyaya2
+[detached from 4144629.nyaya2]
+(sedd) debkanta@anviksha:/data/debkanta/nyaya_project/sedd$ cat > /data/debkanta/nyaya_project/sedd/train.py << 'EOF'
+import os
+os.environ["CUDA_VISIBLE_DEVICES"] = "7"
+
+import torch
+import pandas as pd
+from torch.utils.data import Dataset, DataLoader
+from transformers import AutoTokenizer, AutoModel, get_cosine_schedule_with_warmup
+from torch.optim import AdamW
+from sklearn.metrics import accuracy_score, f1_score, classification_report
+from tqdm import tqdm
+
+DEVICE      = "cuda:0"
+BACKBONE    = "bert-base-uncased"
+MAX_LEN     = 256
+BATCH_SIZE  = 32
+LR          = 2e-5
+EPOCHS      = 10
+PATIENCE    = 3
+NUM_CLASSES = 2
+
+TRAIN_FILES = [
+    "/data/debkanta/nyaya_project/data/extracted/binary_single_train/CJPE_ext_SCI_HCs_single.csv",
+    "/data/debkanta/nyaya_project/data/extracted/binary_single_train/CJPE_ext_SCI_HCs_Tribunals_single.csv",
+    "/data/debkanta/nyaya_project/data/extracted/binary_single_train/CJPE_ext_SCI_single_wo_RoD.csv",
+    "/data/debkanta/nyaya_project/data/extracted/binary_single_train/CJPE_ext_SCI_HCs_Tribunals_daily_orders_single.csv",
+]
+
+CKPT_DIR = "/data/debkanta/nyaya_project/sedd/checkpoints"
+os.makedirs(CKPT_DIR, exist_ok=True)
+
+print("Loading tokenizer...", flush=True)
+tokenizer = AutoTokenizer.from_pretrained(BACKBONE)
+
+print("Loading data...", flush=True)
+dfs = []
+for f in TRAIN_FILES:
+    df = pd.read_csv(f, usecols=["text", "label"])
+    df = df.dropna()
+    df["label"] = df["label"].astype(int)
+    df = df[df["label"].isin([0,1])]
+    df = df.sample(10000, random_state=42)
+    dfs.append(df)
+    print(f"  {os.path.basename(f)}: {len(df):,}", flush=True)
+
+df = pd.concat(dfs).sample(frac=1, random_state=42).reset_index(drop=True)
+print(f"Total: {len(df):,}", flush=True)
+
+# Tokenize everything upfront
+print("Tokenizing...", flush=True)
+texts  = df["text"].astype(str).tolist()
+labels = df["label"].tolist()
+
+encodings = tokenizer(
+    texts,
+    max_length=MAX_LEN,
+    truncation=True,
+EOFnt(f"Baseline: 76.05% | Improvement: {best_acc-76.05:+.2f}%")ush=True) | F1: {val_f1:.2f}%", flu
+(sedd) debkanta@anviksha:/data/debkanta/nyaya_project/sedd$ python3 /data/debkanta/nyaya_project/sedd/train.py
+Loading tokenizer...
+Loading data...
+  CJPE_ext_SCI_HCs_single.csv: 10,000
+  CJPE_ext_SCI_HCs_Tribunals_single.csv: 10,000
+  CJPE_ext_SCI_single_wo_RoD.csv: 10,000
+  CJPE_ext_SCI_HCs_Tribunals_daily_orders_single.csv: 10,000
+Total: 40,000
+Tokenizing...
+Tokenization done!
+Train: 36,000 | Val: 4,000
+Building model...
+Loading weights: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 199/199 [00:00<00:00, 5228.27it/s]
+[transformers] BertModel LOAD REPORT from: bert-base-uncased
+Key                                        | Status     | Details
+-------------------------------------------+------------+--------
+cls.seq_relationship.bias                  | UNEXPECTED |
+cls.predictions.transform.dense.bias       | UNEXPECTED |
+cls.seq_relationship.weight                | UNEXPECTED |
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |
+cls.predictions.bias                       | UNEXPECTED |
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |
+cls.predictions.transform.dense.weight     | UNEXPECTED |
+
+Notes:
+- UNEXPECTED:   can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Parameters: 109.8M
+Epoch 1/10:   5%|█████▉                                                                                                                         | 53/1125 [00:31<10:40,  1.67it/sEpoch 1/10:   5%|█████▉                                                                                                                         | 53/1125 [00:32<10:40,  1.67it/sEpoch 1/10:   5%|██████                                                                                                                         | 54/1125 [00:32<10:32,  1.69it/sEpoch 1/10:   5%|██████                                                                                                                         | 54/1125 [00:33<10:32,  1.69it/sEpoch 1/10:   5%|██████▏                                                                                                                        | 55/1125 [00:33<10:37,  1.68it/sEpoch 1/10:   5%|██████▏                                                                                                                        | 55/1125 [00:33<10:37,  1.68it/sEpoch 1/10:   5%|██████▎                                                                                                                        | 56/1125 [00:33<10:43,  1.66it/sEpoch 1/10:   5%|██████▎                                                                                                                        | 56/1125 [00:34<10:43,  1.66it/sEpoch 1/10:   5%|██████▍                                                                               Epoch 1/10:   5%|██████▋                                                                                                             Epoch 1/10:   5%|██████▉                                                            Epoch 1/10:   6%|██████▉                                                                                                                        | 62/1125 [00:37<10:45,  1.65it/s, loss=0.7059, acc=50.6%Epoch 1/10:   6%|██████▉                                                                                                                        | 62/Epoch 1/10:   6%|███████                                                                                                                        | 63/1125 [00:37<10:46,  1.64it/s, loss=0.7112, Epoch 1/10:   6%|███████                                                                                                              Epoch 1/10:   6%|███████▏                                                                                                     Epoch 1/10:   6%|███████▏                                                                                                                    Epoch 1/10:   6%|███████▎                                                                                                                       | 6EEEpoch 1/10:   8%|█████████▊                                                                                                                     | 87/1125 [00:52<10:26,  1.66it/s, lEpoch 1/10:   8%|█████████▊                                                                                                                     | 87/1125 [00:52<10:26,  1.66it/s, loss=0.69Epoch 1/10:   8%|█████████▉                                                                                                                     | 88/1125 [00:52<09:51,  1.75it/s, loss=0.69Epoch 1/10:   8%|█████████▉                                                                                                                     | 88/1125 [00:53<09:51,  1.75it/s, loss=0.70Epoch 1/10:   8%|██████████                                                                                                                     |Epoch 1/10:   8%|██████████                                                                                                                     | 89/1125 [00:53<09:32,  1.81it/sEpoch 1/10:   8%|██████████▏                                                                                                                    | 90/1125 [00:53<09:45,  1.77it/s, loss=0.7034, acc=50.6%]Epoch 1/10:   8%|██████████▏                                                                                                    Epoch 1/10:   8%|██████████▎                                                                                                    Epoch 1/10:   8%|██████████▎                                                                                                    Epoch 1/10:   8%|██████████▍                                                                                                    Epoch 1/10:   8%|██████████▍                                                                                                    Epoch 1/10:   8%|██████████▍                                                                                                    Epoch 1/10:   8%|██████████▍                                                                                                    Epoch 1/10:   8%|██████████▌                                                                        Epoch 1/10:   8%|██████████▌                                                                                                          Epoch 1/10:   8%|██████████▋                                                                                                          Epoch 1/10:   8%|██████████▋                                                                                                          Epoch 1/10:   9%|██████████▊                                                                                                          Epoch 1/10:   9%|██████████▊                                                                                                          Epoch 1/10:   9%|██████████▉                                                                                                          Epoch 1/10:   9%|██████████▉                                                                                                          Epoch 1/10:   9%|███████████                                                                                                          Epoch 1/10:   9%|███████████                                                                                                          Epoch 1/10:   9%|███████████▏                                                                                                         Epoch 1/10:   9%|███████████▏                                                                                                         Epoch 1/10:   9%|███████████▏                                                                                                         Epoch 1/10:   9%|███████████▏                                                                                                         Epoch 1/10:   9%|███████████▎                                                                                                         Epoch 1/10:   9%|███████████▎                                                                                                         Epoch 1/10:   9%|███████████▍                                                                                                         Epoch 1/10:   9%|███████████▍                                                                                                         Epoch 1/10:   9%|███████████▌                                                                                                         Epoch 1/10:   9%|███████████▌                                                                                                         Epoch 1/10:   9%|███████████▋                                                                                                         Epoch 1/10:   9%|███████████▋                                                                                                         Epoch 1/10:   9%|███████████▊                                                                                                         Epoch 1/10:   9%|███████████▊                                                                                                         Epoch 1/10:   9%|███████████▊                                                                                                         Epoch 1/10:   9%|███████████▊                                                                                                         Epoch 1/10:  10%|███████████▉                                                                                                         Epoch 1/10:  10%|███████████▉                                                                                                         Epoch 1/10:  10%|████████████                                                                                                         Epoch 1/10:  10%|████████████                                                                                                         Epoch 1/10:  10%|████████████▏                                                                                                        Epoch 1/10:  10%|████████████▏                                                                                                        Epoch 1/10:  10%|████████████▎                                                                                                        Epoch 1/10:  10%|████████████▎                                                                                                        Epoch 1/10:  10%|████████████▍                                                                                                        Epoch 1/10:  10%|████████████▍                                                                                                        Epoch 1/10:  10%|████████████▌                                                          Epoch 1/10:  10%|████████████▌                                                                                                               Epoch 1/10:  10%|████████████▋                                                                                                               Epoch 1/10:  10%|████████████▋                                                                                                               Epoch 1/10:  10%|████████████▊                                                                                                               Epoch 1/10:  10%|████████████▊                                                                                                               Epoch 1/10:  10%|████████████▉                                                                                                               Epoch 1/10:  10%|████████████▉                                                                                                               Epoch 1/10:  10%|████████████▉                                                                                                               Epoch 1/10:  10%|████████████▉                                                                                                               Epoch 1/10:  10%|█████████████                                                                                                               Epoch 1/10:  10%|█████████████                                                                                                                 | 117/1125 [01:10<10:02,  1.67it/s, loss=0.68Epoch 1/10:  10%|█████████████▏                                                                                                                | 118/1125 [01:10<10:08,  1.66it/s, loss=0.68Epoch 1/10:  10%|█████████████▏                                                                                                                | 118/1125 [01:11<10:08,  1.66it/s, loss=0.68Epoch 1/10:  11%|█████████████▎                                                                                                                | 119/1125 [01:11<10:04,  1.66it/s, loss=0.68Epoch 1/10:  11%|█████████████▎                                                                                                                | 119/1125 [01:11<10:04,  1.66it/s, loss=0.69Epoch 1/10:  11%|█████████████▍                                                                                                                | 120/1125 [01:11<10:01,  1.67it/s, loss=0.69Epoch 1/10:  11%|█████████████▍                                                                                                                | 120/1125 [01:12<10:01,  1.67it/s, loss=0.68Epoch 1/10:  11%|█████████████▌                                                                                                                | 121/1125 [01:12<10:09,  1.65it/s, loss=0.68Epoch 1/10:  11%|█████████████▌                                                                                                                | 121/1125 [01:12<10:09,  1.65it/s, loss=0.69Epoch 1/10:  11%|█████████████▋                                                                                                                | 122/1125 [01:12<10:13,  1.64it/s, loss=0.69Epoch 1/10:  11%|█████████████▋                                                                                                                | 122/1125 [01:13<10:13,  1.64it/s, loss=0.71Epoch 1/10:  11%|█████████████▊                                                                                                                | 123/1125 [01:13<10:05,  1.65it/s, loss=0.71Epoch 1/10:  11%|█████████████▊                                                                                                                | 123/1125 [01:14<10:05,  1.65it/s, loss=0.67Epoch 1/10:  11%|█████████████▉                                                                                                                | 124/1125 [01:14<10:05,  1.65it/s, loss=0.67Epoch 1/10:  11%|█████████████▉                                                                                                                | 124/1125 [01:14<10:05,  1.65it/s, loss=0.70Epoch 1/10:  11%|██████████████                                                                                                                | 125/1125 [01:14<10:04,  1.66it/s, loss=0.70Epoch 1/10:  11%|██████████████                                                                                                                | 125/1125 [01:15<10:04,  1.66it/s, loss=0.69Epoch 1/10:  11%|██████████████                                                                                                                | 126/1125 [01:15<10:02,  1.66it/s, loss=0.69Epoch 1/10:  11%|██████████████                                                                                                                | 126/1125 [01:15<10:02,  1.66it/s, loss=0.69Epoch 1/10:  11%|██████████████▏                                                                                                               | 127/1125 [01:15<09:55,  1.68it/s, loss=0.69Epoch 1/10:  11%|██████████████▏                                                                                                               | 127/1125 [01:16<09:55,  1.68it/s, loss=0.68Epoch 1/10:  11%|██████████████▎                                                                                                               | 128/1125 [01:16<10:00,  1.66it/s, loss=0.68Epoch 1/10:  11%|██████████████▎                                                                                                               | 128/1125 [01:17<10:00,  1.66it/s, loss=0.67Epoch 1/10:  11%|██████████████▍                                                                                                               | 129/1125 [01:17<10:00,  1.66it/s, loss=0.67Epoch 1/10:  11%|██████████████▍                                                                                                               | 129/1125 [01:17<10:00,  1.66it/s, loss=0.70Epoch 1/10:  12%|██████████████▌                                                                                                               | 130/1125 [01:17<09:59,  1.66it/s, loss=0.70Epoch 1/10:  12%|██████████████▌                                                                                                               | 130/1125 [01:18<09:59,  1.66it/s, loss=0.70Epoch 1/10:  12%|██████████████▋                                                                                                               | 131/1125 [01:18<09:57,  1.66it/s, loss=0.70Epoch 1/10:  12%|██████████████▋                                                                                                               | 131/1125 [01:18<09:57,  1.66it/s, loss=0.69Epoch 1/10:  12%|██████████████▊                                                                                                               | 132/1125 [01:18<09:57,  1.66it/s, loss=0.69Epoch 1/10:  12%|██████████████▊                                                                                                               | 132/1125 [01:19<09:57,  1.66it/s, loss=0.67Epoch 1/10:  12%|██████████████▉                                                                                                               | 133/1125 [01:19<08:48,  1.88it/s, loss=0.67Epoch 1/10:  12%|██████████████▉                                                                                                               | 133/1125 [01:19<08:48,  1.88it/s, loss=0.69Epoch 1/10:  12%|███████████████                                                                                                               | 134/1125 [01:19<09:08,  1.81it/s, loss=0.69Epoch 1/10:  12%|███████████████                                                                                                               | 134/1125 [01:20<09:08,  1.81it/s, loss=0.69Epoch 1/10:  12%|███████████████                                                                                                               | 135/1125 [01:20<09:26,  1.75it/s, loss=0.69Epoch 1/10:  12%|███████████████                                                                                                               | 135/1125 [01:21<09:26,  1.75it/s, loss=0.69Epoch 1/10:  12%|███████████████▏                                                                                                              | 136/1125 [01:21<09:29,  1.74it/s, loss=0.69Epoch 1/10:  12%|███████████████▏                                                                                                              | 136/1125 [01:21<09:29,  1.74it/s, loss=0.69Epoch 1/10:  12%|███████████████▎                                                                                                              | 137/1125 [01:21<09:39,  1.70it/s, loss=0.69Epoch 1/10:  12%|███████████████▎                                                                                                              | 137/1125 [01:22<09:39,  1.70it/s, loss=0.67Epoch 1/10:  12%|███████████████▍                                                                                                              | 138/1125 [01:22<09:49,  1.68it/s, loss=0.67Epoch 1/10:  12%|███████████████▍                                                                                                              | 138/1125 [01:22<09:49,  1.68it/s, loss=0.68Epoch 1/10:  12%|███████████████▌                                                                                                              | 139/1125 [01:22<09:59,  1.65it/s, loss=0.68Epoch 1/10:  12%|███████████████▌                                                                                                              | 139/1125 [01:23<09:59,  1.65it/s, loss=0.70Epoch 1/10:  12%|███████████████▋                                                                                                              | 140/1125 [01:23<09:57,  1.65it/s, loss=0.70Epoch 1/10:  12%|███████████████▋                                                                                                              | 140/1125 [01:24<09:57,  1.65it/s, loss=0.68Epoch 1/10:  13%|███████████████▊                                                                                                              | 141/1125 [01:24<09:58,  1.64it/s, loss=0.68Epoch 1/10:  13%|███████████████▊                                                                                                              | 141/1125 [01:24<09:58,  1.64it/s, loss=0.67Epoch 1/10:  13%|███████████████▉                                                                                                              | 142/1125 [01:24<09:56,  1.65it/s, loss=0.67Epoch 1/10:  13%|███████████████▉                                                                                                              | 142/1125 [01:25<09:56,  1.65it/s, loss=0.70Epoch 1/10:  13%|████████████████                                                                                                              | 143/1125 [01:25<09:55,  1.65it/s, loss=0.70Epoch 1/10:  13%|████████████████                                                                                                              | 143/1125 [01:25<09:55,  1.65it/s, loss=0.69Epoch 1/10:  13%|████████████████▏                                                                                                             | 144/1125 [01:25<10:00,  1.63it/s, loss=0.69Epoch 1/10:  13%|████████████████▏                                                                                                             | 144/1125 [01:26<10:00,  1.63it/s, loss=0.68Epoch 1/10:  13%|████████████████▏                                                                                                             | 145/1125 [01:26<09:58,  1.64it/s, loss=0.68Epoch 1/10:  13%|████████████████▏                                                                                                             | 145/1125 [01:27<09:58,  1.64it/s, loss=0.69Epoch 1/10:  13%|████████████████▎                                                                                                             | 146/1125 [01:27<09:53,  1.65it/s, loss=0.69Epoch 1/10:  13%|████████████████▎                                                                                                             | 146/1125 [01:27<09:53,  1.65it/s, loss=0.69Epoch 1/10:  13%|████████████████▍                                                                                                             | 147/1125 [01:27<09:49,  1.66it/s, loss=0.69Epoch 1/10:  13%|████████████████▍                                                                                                             | 147/1125 [01:28<09:49,  1.66it/s, loss=0.71Epoch 1/10:  13%|████████████████▌                                                                                                             | 148/1125 [01:28<09:53,  1.65it/s, loss=0.71Epoch 1/10:  13%|████████████████▌                                                                                                             | 148/1125 [01:28<09:53,  1.65it/s, loss=0.69Epoch 1/10:  13%|████████████████▋                                                                                                             | 149/1125 [01:28<09:57,  1.63it/s, loss=0.69Epoch 1/10:  13%|████████████████▋                                                                                                             | 149/1125 [01:29<09:57,  1.63it/s, loss=0.69Epoch 1/10:  13%|████████████████▊                                                                                                             | 150/1125 [01:29<09:55,  1.64it/s, loss=0.69Epoch 1/10:  13%|████████████████▊                                                                                                             | 150/1125 [01:30<09:55,  1.64it/s, loss=0.68Epoch 1/10:  13%|████████████████▉                                                                                                             | 151/1125 [01:30<09:54,  1.64it/s, loss=0.68Epoch 1/10:  13%|████████████████▉                                                                                                             | 151/1125 [01:30<09:54,  1.64it/s, loss=0.69Epoch 1/10:  14%|█████████████████                                                                                                             | 152/1125 [01:30<09:56,  1.63it/s, loss=0.69Epoch 1/10:  14%|█████████████████                                                                                                             | 152/1125 [01:31<09:56,  1.63it/s, loss=0.68Epoch 1/10:  14%|█████████████████▏                                                                                                            | 153/1125 [01:31<09:54,  1.63it/s, loss=0.68Epoch 1/10:  14%|█████████████████▏                                                                                                            | 153/1125 [01:32<09:54,  1.63it/s, loss=0.70Epoch 1/10:  14%|█████████████████▏                                                                                                            | 154/1125 [01:32<09:50,  1.64it/s, loss=0.70Epoch 1/10:  14%|█████████████████▏                                                                                                            | 154/1125 [01:32<09:50,  1.64it/s, loss=0.70Epoch 1/10:  14%|█████████████████▎                                                                                                            | 155/1125 [01:32<09:29,  1.70it/s, loss=0.70Epoch 1/10:  14%|█████████████████▎                                                                                                            | 155/1125 [01:33<09:29,  1.70it/s, loss=0.68Epoch 1/10:  14%|█████████████████▍                                                                                                            | 156/1125 [01:33<08:39,  1.86it/s, loss=0.68Epoch 1/10:  14%|█████████████████▍                                                                                                            | 156/1125 [01:33<08:39,  1.86it/s, loss=0.70Epoch 1/10:  14%|█████████████████▌                                                                                                            | 157/1125 [01:33<09:06,  1.77it/s, loss=0.70Epoch 1/10:  14%|█████████████████▌                                                                                                            | 157/1125 [01:34<09:06,  1.77it/s, loss=0.69Epoch 1/10:  14%|█████████████████▋                                                                                                            | 158/1125 [01:34<09:22,  1.72it/s, loss=0.69Epoch 1/10:  14%|█████████████████▋                                                                                                            | 158/1125 [01:34<09:22,  1.72it/s, loss=0.69Epoch 1/10:  14%|█████████████████▊                                                                                                            | 159/1125 [01:34<09:34,  1.68it/s, loss=0.69Epoch 1/10:  14%|█████████████████▊                                                                                                            | 159/1125 [01:35<09:34,  1.68it/s, loss=0.68Epoch 1/10:  14%|█████████████████▉                                                                                                            | 160/1125 [01:35<09:34,  1.68it/s, loss=0.68Epoch 1/10:  14%|█████████████████▉                                                                                                            | 160/1125 [01:36<09:34,  1.68it/s, loss=0.71Epoch 1/10:  14%|██████████████████                                                                                                            | 161/1125 [01:36<09:38,  1.67it/s, loss=0.71Epoch 1/10:  14%|██████████████████                                                                                                            | 161/1125 [01:36<09:38,  1.67it/s, loss=0.68Epoch 1/10:  14%|██████████████████▏                                                                                                           | 162/1125 [01:36<09:38,  1.66it/s, loss=0.68Epoch 1/10:  14%|██████████████████▏                                                                                                           | 162/1125 [01:37<09:38,  1.66it/s, loss=0.70Epoch 1/10:  14%|██████████████████▎                                                                                                           | 163/1125 [01:37<09:40,  1.66it/s, loss=0.70Epoch 1/10:  14%|██████████████████▎                                                                                                           | 163/1125 [01:37<09:40,  1.66it/s, loss=0.68Epoch 1/10:  15%|██████████████████▎                                                                                                           | 164/1125 [01:37<09:38,  1.66it/s, loss=0.68Epoch 1/10:  15%|██████████████████▎                                                                                                           | 164/1125 [01:38<09:38,  1.66it/s, loss=0.67Epoch 1/10:  15%|██████████████████▍                                                                                                           | 165/1125 [01:38<09:39,  1.66it/s, loss=0.67Epoch 1/10:  15%|██████████████████▍                                                                                                           | 165/1125 [01:39<09:39,  1.66it/s, loss=0.67Epoch 1/10:  15%|██████████████████▌                                                                                                           | 166/1125 [01:39<09:36,  1.66it/s, loss=0.67Epoch 1/10:  15%|██████████████████▌                                                                                                           | 166/1125 [01:39<09:36,  1.66it/s, loss=0.69Epoch 1/10:  15%|██████████████████▋                                                                                                           | 167/1125 [01:39<09:36,  1.66it/s, loss=0.69Epoch 1/10:  15%|██████████████████▋                                                                                                           | 167/1125 [01:40<09:36,  1.66it/s, loss=0.70Epoch 1/10:  15%|██████████████████▊                                                                                                           | 168/1125 [01:40<09:40,  1.65it/s, loss=0.70Epoch 1/10:  15%|██████████████████▊                                                                                                           | 168/1125 [01:40<09:40,  1.65it/s, loss=0.69Epoch 1/10:  15%|██████████████████▉                                                                                                           | 169/1125 [01:40<09:39,  1.65it/s, loss=0.69Epoch 1/10:  15%|██████████████████▉                                                                                                           | 169/1125 [01:41<09:39,  1.65it/s, loss=0.69Epoch 1/10:  15%|███████████████████                                                                                                           | 170/1125 [01:41<09:42,  1.64it/s, loss=0.69Epoch 1/10:  15%|███████████████████                                                                                                           | 170/1125 [01:42<09:42,  1.64it/s, loss=0.69Epoch 1/10:  15%|███████████████████▏                                                                                                          | 171/1125 [01:42<09:39,  1.65it/s, loss=0.69Epoch 1/10:  15%|███████████████████▏                                                                                                          | 171/1125 [01:42<09:39,  1.65it/s, loss=0.68Epoch 1/10:  15%|███████████████████▎                                                                                                          | 172/1125 [01:42<09:42,  1.64it/s, loss=0.68Epoch 1/10:  15%|███████████████████▎                                                                                                          | 172/1125 [01:43<09:42,  1.64it/s, loss=0.69Epoch 1/10:  15%|███████████████████▍                                                                                                          | 173/1125 [01:43<09:47,  1.62it/s, loss=0.69Epoch 1/10:  15%|███████████████████▍                                                                                                          | 173/1125 [01:43<09:47,  1.62it/s, loss=0.68Epoch 1/10:  15%|███████████████████▍                                                                                                          | 174/1125 [01:43<09:41,  1.63it/s, loss=0.68Epoch 1/10:  15%|███████████████████▍                                                                                                          | 174/1125 [01:44<09:41,  1.63it/s, loss=0.68Epoch 1/10:  16%|███████████████████▌                                                                                                          | 175/1125 [01:44<09:36,  1.65it/s, loss=0.68Epoch 1/10:  16%|███████████████████▌                                                                                                          | 175/1125 [01:45<09:36,  1.65it/s, loss=0.67Epoch 1/10:  16%|███████████████████▋                                                                                                          | 176/1125 [01:45<09:36,  1.65it/s, loss=0.67Epoch 1/10:  16%|███████████████████▋                                                                                                          | 176/1125 [01:45<09:36,  1.65it/s, loss=0.69Epoch 1/10:  16%|███████████████████▊                                                                                                          | 177/1125 [01:45<08:59,  1.76it/s, loss=0.69Epoch 1/10:  16%|███████████████████▊                                                                                                          | 177/1125 [01:46<08:59,  1.76it/s, loss=0.69Epoch 1/10:  16%|███████████████████▉                                                                                                          | 178/1125 [01:46<08:42,  1.81it/s, loss=0.69Epoch 1/10:  16%|███████████████████▉                                                                                                          | 178/1125 [01:46<08:42,  1.81it/s, loss=0.68Epoch 1/10:  16%|████████████████████                                                                                                          | 179/1125 [01:46<08:56,  1.76it/s, loss=0.68Epoch 1/10:  16%|████████████████████                                                                                                          | 179/1125 [01:47<08:56,  1.76it/s, loss=0.69Epoch 1/10:  16%|████████████████████▏                                                                                                         | 180/1125 [01:47<09:12,  1.71it/s, loss=0.69Epoch 1/10:  16%|████████████████████▏                                                                                                         | 180/1125 [01:48<09:12,  1.71it/s, loss=0.68Epoch 1/10:  16%|████████████████████▎                                                                                                         | 181/1125 [01:48<09:19,  1.69it/s, loss=0.68Epoch 1/10:  16%|████████████████████▎                                                                                                         | 181/1125 [01:48<09:19,  1.69it/s, loss=0.73Epoch 1/10:  16%|████████████████████▍                                                                                                         | 182/1125 [01:48<09:17,  1.69it/s, loss=0.73Epoch 1/10:  16%|████████████████████▍                                                                                                         | 182/1125 [01:49<09:17,  1.69it/s, loss=0.69Epoch 1/10:  16%|████████████████████▍                                                                                                         | 183/1125 [01:49<09:24,  1.67it/s, loss=0.69Epoch 1/10:  16%|████████████████████▍                                                                                                         | 183/1125 [01:49<09:24,  1.67it/s, loss=0.68Epoch 1/10:  16%|████████████████████▌                                                                                                         | 184/1125 [01:49<09:28,  1.66it/s, loss=0.68Epoch 1/10:  16%|████████████████████▌                                                                                                         | 184/1125 [01:50<09:28,  1.66it/s, loss=0.68Epoch 1/10:  16%|████████████████████▋                                                                                                         | 185/1125 [01:50<09:27,  1.66it/s, loss=0.68Epoch 1/10:  16%|████████████████████▋                                                                                                         | 185/1125 [01:51<09:27,  1.66it/s, loss=0.67Epoch 1/10:  17%|████████████████████▊                                                                                                         | 186/1125 [01:51<09:31,  1.64it/s, loss=0.67Epoch 1/10:  17%|████████████████████▊                                                                                                         | 186/1125 [01:51<09:31,  1.64it/s, loss=0.70Epoch 1/10:  17%|████████████████████▉                                                                                                         | 187/1125 [01:51<09:23,  1.66it/s, loss=0.70Epoch 1/10:  17%|████████████████████▉                                                                                                         | 187/1125 [01:52<09:23,  1.66it/s, loss=0.69Epoch 1/10:  17%|█████████████████████                                                                                                         | 188/1125 [01:52<09:27,  1.65it/s, loss=0.69Epoch 1/10:  17%|█████████████████████                                                                                                         | 188/1125 [01:52<09:27,  1.65it/s, loss=0.66Epoch 1/10:  17%|█████████████████████▏                                                                                                        | 189/1125 [01:52<09:30,  1.64it/s, loss=0.66Epoch 1/10:  17%|█████████████████████▏                                                                                                        | 189/1125 [01:53<09:30,  1.64it/s, loss=0.68Epoch 1/10:  17%|█████████████████████▎                                                                                                        | 190/1125 [01:53<09:22,  1.66it/s, loss=0.68Epoch 1/10:  17%|█████████████████████▎                                                                                                        | 190/1125 [01:54<09:22,  1.66it/s, loss=0.70Epoch 1/10:  17%|█████████████████████▍                                                                                                        | 191/1125 [01:54<09:19,  1.67it/s, loss=0.70Epoch 1/10:  17%|█████████████████████▍                                                                                                        | 191/1125 [01:54<09:19,  1.67it/s, loss=0.69Epoch 1/10:  17%|█████████████████████▌                                                                                                        | 192/1125 [01:54<09:20,  1.66it/s, loss=0.69Epoch 1/10:  17%|█████████████████████▌                                                                                                        | 192/1125 [01:55<09:20,  1.66it/s, loss=0.68Epoch 1/10:  17%|█████████████████████▌                                                                                                        | 193/1125 [01:55<09:26,  1.64it/s, loss=0.68Epoch 1/10:  17%|█████████████████████▌                                                                                                        | 193/1125 [01:55<09:26,  1.64it/s, loss=0.67Epoch 1/10:  17%|█████████████████████▋                                                                                                        | 194/1125 [01:55<09:28,  1.64it/s, loss=0.67Epoch 1/10:  17%|█████████████████████▋                                                                                                        | 194/1125 [01:56<09:28,  1.64it/s, loss=0.68Epoch 1/10:  17%|█████████████████████▊                                                                                                        | 195/1125 [01:56<09:25,  1.65it/s, loss=0.68Epoch 1/10:  17%|█████████████████████▊                                                                                                        | 195/1125 [01:57<09:25,  1.65it/s, loss=0.68Epoch 1/10:  17%|█████████████████████▉                                                                                                        | 196/1125 [01:57<09:27,  1.64it/s, loss=0.68Epoch 1/10:  17%|█████████████████████▉                                                                                                        | 196/1125 [01:57<09:27,  1.64it/s, loss=0.70Epoch 1/10:  18%|██████████████████████                                                                                                        | 197/1125 [01:57<09:23,  1.65it/s, loss=0.70Epoch 1/10:  18%|██████████████████████                                                                                                        | 197/1125 [01:58<09:23,  1.65it/s, loss=0.69Epoch 1/10:  18%|██████████████████████▏                                                                                                       | 198/1125 [01:58<09:22,  1.65it/s, loss=0.69Epoch 1/10:  18%|██████████████████████▏                                                                                                       | 198/1125 [01:58<09:22,  1.65it/s, loss=0.68Epoch 1/10:  18%|██████████████████████▎                                                                                                       | 199/1125 [01:58<08:33,  1.80it/s, loss=0.68Epoch 1/10:  18%|██████████████████████▎                                                                                                       | 199/1125 [01:59<08:33,  1.80it/s, loss=0.68Epoch 1/10:  18%|██████████████████████▍                                                                                                       | 200/1125 [01:59<08:25,  1.83it/s, loss=0.68Epoch 1/10:  18%|██████████████████████▍                                                                                                       | 200/1125 [01:59<08:25,  1.83it/s, loss=0.68Epoch 1/10:  18%|██████████████████████▌                                                                                                       | 201/1125 [01:59<08:42,  1.77it/s, loss=0.68Epoch 1/10:  18%|██████████████████████▌                                                                                                       | 201/1125 [02:00<08:42,  1.77it/s, loss=0.69Epoch 1/10:  18%|██████████████████████▌                                                                                                       | 202/1125 [02:00<08:59,  1.71it/s, loss=0.69Epoch 1/10:  18%|██████████████████████▌                                                                                                       | 202/1125 [02:01<08:59,  1.71it/s, loss=0.67Epoch 1/10:  18%|██████████████████████▋                                                                                                       | 203/1125 [02:01<09:09,  1.68it/s, loss=0.67Epoch 1/10:  18%|██████████████████████▋                                                                                                       | 203/1125 [02:01<09:09,  1.68it/s, loss=0.68Epoch 1/10:  18%|██████████████████████▊                                                                                                       | 204/1125 [02:01<09:11,  1.67it/s, loss=0.68Epoch 1/10:  18%|██████████████████████▊                                                                                                       | 204/1125 [02:02<09:11,  1.67it/s, loss=0.69Epoch 1/10:  18%|██████████████████████▉                                                                                                       | 205/1125 [02:02<09:16,  1.65it/s, loss=0.69Epoch 1/10:  18%|██████████████████████▉                                                                                                       | 205/1125 [02:02<09:16,  1.65it/s, loss=0.68Epoch 1/10:  18%|███████████████████████                                                                                                       | 206/1125 [02:02<09:14,  1.66it/s, loss=0.68Epoch 1/10:  18%|███████████████████████                                                                                                       | 206/1125 [02:03<09:14,  1.66it/s, loss=0.70Epoch 1/10:  18%|███████████████████████▏                                                                                                      | 207/1125 [02:03<09:13,  1.66it/s, loss=0.70Epoch 1/10:  18%|███████████████████████▏                                                                                                      | 207/1125 [02:04<09:13,  1.66it/s, loss=0.67Epoch 1/10:  18%|███████████████████████▎                                                                                                      | 208/1125 [02:04<09:12,  1.66it/s, loss=0.67Epoch 1/10:  18%|███████████████████████▎                                                                                                      | 208/1125 [02:04<09:12,  1.66it/s, loss=0.70Epoch 1/10:  19%|███████████████████████▍                                                                                                      | 209/1125 [02:04<09:17,  1.64it/s, loss=0.70Epoch 1/10:  19%|███████████████████████▍                                                                                                      | 209/1125 [02:05<09:17,  1.64it/s, loss=0.71Epoch 1/10:  19%|███████████████████████▌                                                                                                      | 210/1125 [02:05<09:14,  1.65it/s, loss=0.71Epoch 1/10:  19%|███████████████████████▌                                                                                                      | 210/1125 [02:05<09:14,  1.65it/s, loss=0.67Epoch 1/10:  19%|███████████████████████▋                                                                                                      | 211/1125 [02:05<09:07,  1.67it/s, loss=0.67Epoch 1/10:  19%|███████████████████████▋                                                                                                      | 211/1125 [02:06<09:07,  1.67it/s, loss=0.68Epoch 1/10:  19%|███████████████████████▋                                                                                                      | 212/1125 [02:06<09:14,  1.65it/s, loss=0.68Epoch 1/10:  19%|███████████████████████▋                                                                                                      | 212/1125 [02:07<09:14,  1.65it/s, loss=0.68Epoch 1/10:  19%|███████████████████████▊                                                                                                      | 213/1125 [02:07<09:11,  1.65it/s, loss=0.68Epoch 1/10:  19%|███████████████████████▊                                                                                                      | 213/1125 [02:07<09:11,  1.65it/s, loss=0.71Epoch 1/10:  19%|███████████████████████▉                                                                                                      | 214/1125 [02:07<09:02,  1.68it/s, loss=0.71Epoch 1/10:  19%|███████████████████████▉                                                                                                      | 214/1125 [02:08<09:02,  1.68it/s, loss=0.68Epoch 1/10:  19%|████████████████████████                                                                                                      | 215/1125 [02:08<09:01,  1.68it/s, loss=0.68Epoch 1/10:  19%|████████████████████████                                                                                                      | 215/1125 [02:08<09:01,  1.68it/s, loss=0.69Epoch 1/10:  19%|████████████████████████▏                                                                                                     | 216/1125 [02:09<09:05,  1.67it/s, loss=0.69Epoch 1/10:  19%|████████████████████████▏                                                                                                     | 216/1125 [02:09<09:05,  1.67it/s, loss=0.67Epoch 1/10:  19%|████████████████████████▎                                                                                                     | 217/1125 [02:09<09:08,  1.65it/s, loss=0.67Epoch 1/10:  19%|████████████████████████▎                                                                                                     | 217/1125 [02:10<09:08,  1.65it/s, loss=0.65Epoch 1/10:  19%|████████████████████████▍                                                                                                     | 218/1125 [02:10<09:08,  1.65it/s, loss=0.65Epoch 1/10:  19%|████████████████████████▍                                                                                                     | 218/1125 [02:10<09:08,  1.65it/s, loss=0.68Epoch 1/10:  19%|████████████████████████▌                                                                                                     | 219/1125 [02:10<09:12,  1.64it/s, loss=0.68Epoch 1/10:  19%|████████████████████████▌                                                                                                     | 219/1125 [02:11<09:12,  1.64it/s, loss=0.68Epoch 1/10:  20%|████████████████████████▋                                                                                                     | 220/1125 [02:11<09:11,  1.64it/s, loss=0.68Epoch 1/10:  20%|████████████████████████▋                                                                                                     | 220/1125 [02:12<09:11,  1.64it/s, loss=0.69Epoch 1/10:  20%|████████████████████████▊                                                                                                     | 221/1125 [02:12<09:07,  1.65it/s, loss=0.69Epoch 1/10:  20%|████████████████████████▊                                                                                                     | 221/1125 [02:12<09:07,  1.65it/s, loss=0.69Epoch 1/10:  20%|████████████████████████▊                                                                                                     | 222/1125 [02:12<09:05,  1.65it/s, loss=0.69Epoch 1/10:  20%|████████████████████████▊                                                                                                     | 222/1125 [02:13<09:05,  1.65it/s, loss=0.66Epoch 1/10:  20%|████████████████████████▉                                                                                                     | 223/1125 [02:13<09:04,  1.66it/s, loss=0.66Epoch 1/10:  20%|████████████████████████▉                                                                                                     | 223/1125 [02:13<09:04,  1.66it/s, loss=0.69Epoch 1/10:  20%|█████████████████████████                                                                                                     | 224/1125 [02:13<09:02,  1.66it/s, loss=0.69Epoch 1/10:  20%|█████████████████████████                                                                                                     | 224/1125 [02:14<09:02,  1.66it/s, loss=0.68Epoch 1/10:  20%|█████████████████████████▏                                                                                                    | 225/1125 [02:14<09:01,  1.66it/s, loss=0.68Epoch 1/10:  20%|█████████████████████████▏                                                                                                    | 225/1125 [02:15<09:01,  1.66it/s, loss=0.68Epoch 1/10:  20%|█████████████████████████▎                                                                                                    | 226/1125 [02:15<09:01,  1.66it/s, loss=0.68Epoch 1/10:  20%|█████████████████████████▎                                                                                                    | 226/1125 [02:15<09:01,  1.66it/s, loss=0.72Epoch 1/10:  20%|█████████████████████████▍                                                                                                    | 227/1125 [02:15<08:28,  1.77it/s, loss=0.72Epoch 1/10:  20%|█████████████████████████▍                                                                                                    | 227/1125 [02:16<08:28,  1.77it/s, loss=0.68Epoch 1/10:  20%|█████████████████████████▌                                                                                                    | 228/1125 [02:16<08:01,  1.86it/s, loss=0.68Epoch 1/10:  20%|█████████████████████████▌                                                                                                    | 228/1125 [02:16<08:01,  1.86it/s, loss=0.66Epoch 1/10:  20%|█████████████████████████▋                                                                                                    | 229/1125 [02:16<08:25,  1.77it/s, loss=0.66Epoch 1/10:  20%|█████████████████████████▋                                                                                                    | 229/1125 [02:17<08:25,  1.77it/s, loss=0.70Epoch 1/10:  20%|█████████████████████████▊                                                                                                    | 230/1125 [02:17<08:35,  1.74it/s, loss=0.70Epoch 1/10:  20%|█████████████████████████▊                                                                                                    | 230/1125 [02:17<08:35,  1.74it/s, loss=0.66Epoch 1/10:  21%|█████████████████████████▊                                                                                                    | 231/1125 [02:17<08:42,  1.71it/s, loss=0.66Epoch 1/10:  21%|█████████████████████████▊                                                                                                    | 231/1125 [02:18<08:42,  1.71it/s, loss=0.69Epoch 1/10:  21%|█████████████████████████▉                                                                                                    | 232/1125 [02:18<08:43,  1.70it/s, loss=0.69Epoch 1/10:  21%|█████████████████████████▉                                                                                                    | 232/1125 [02:19<08:43,  1.70it/s, loss=0.64Epoch 1/10:  21%|██████████████████████████                                                                                                    | 233/1125 [02:19<08:48,  1.69it/s, loss=0.64Epoch 1/10:  21%|██████████████████████████                                                                                                    | 233/1125 [02:19<08:48,  1.69it/s, loss=0.72Epoch 1/10:  21%|██████████████████████████▏                                                                                                   | 234/1125 [02:19<08:51,  1.68it/s, loss=0.72Epoch 1/10:  21%|██████████████████████████▏                                                                                                   | 234/1125 [02:20<08:51,  1.68it/s, loss=0.67Epoch 1/10:  21%|██████████████████████████▎                                                                                                   | 235/1125 [02:20<08:55,  1.66it/s, loss=0.67Epoch 1/10:  21%|██████████████████████████▎                                                                                                   | 235/1125 [02:20<08:55,  1.66it/s, loss=0.69Epoch 1/10:  21%|██████████████████████████▍                                                                                                   | 236/1125 [02:20<08:55,  1.66it/s, loss=0.69Epoch 1/10:  21%|██████████████████████████▍                                                                                                   | 236/1125 [02:21<08:55,  1.66it/s, loss=0.71Epoch 1/10:  21%|██████████████████████████▌                                                                                                   | 237/1125 [02:21<08:59,  1.65it/s, loss=0.71Epoch 1/10:  21%|██████████████████████████▌                                                                                                   | 237/1125 [02:22<08:59,  1.65it/s, loss=0.70Epoch 1/10:  21%|██████████████████████████▋                                                                                                   | 238/1125 [02:22<08:55,  1.65it/s, loss=0.70Epoch 1/10:  21%|██████████████████████████▋                                                                                                   | 238/1125 [02:22<08:55,  1.65it/s, loss=0.71Epoch 1/10:  21%|██████████████████████████▊                                                                                                   | 239/1125 [02:22<08:58,  1.65it/s, loss=0.71Epoch 1/10:  21%|██████████████████████████▊                                                                                                   | 239/1125 [02:23<08:58,  1.65it/s, loss=0.65Epoch 1/10:  21%|██████████████████████████▉                                                                                                   | 240/1125 [02:23<09:00,  1.64it/s, loss=0.65Epoch 1/10:  21%|██████████████████████████▉                                                                                                   | 240/1125 [02:23<09:00,  1.64it/s, loss=0.67Epoch 1/10:  21%|██████████████████████████▉                                                                                                   | 241/1125 [02:23<08:59,  1.64it/s, loss=0.67Epoch 1/10:  21%|██████████████████████████▉                                                                                                   | 241/1125 [02:24<08:59,  1.64it/s, loss=0.67Epoch 1/10:  22%|███████████████████████████                                                                                                   | 242/1125 [02:24<09:00,  1.63it/s, loss=0.67Epoch 1/10:  22%|███████████████████████████                                                                                                   | 242/1125 [02:25<09:00,  1.63it/s, loss=0.68Epoch 1/10:  22%|███████████████████████████▏                                                                                                  | 243/1125 [02:25<09:01,  1.63it/s, loss=0.68Epoch 1/10:  22%|███████████████████████████▏                                                                                                  | 243/1125 [02:25<09:01,  1.63it/s, loss=0.67Epoch 1/10:  22%|███████████████████████████▎                                                                                                  | 244/1125 [02:25<08:59,  1.63it/s, loss=0.67Epoch 1/10:  22%|███████████████████████████▎                                                                                                  | 244/1125 [02:26<08:59,  1.63it/s, loss=0.68Epoch 1/10:  22%|███████████████████████████▍                                                                                                  | 245/1125 [02:26<08:58,  1.63it/s, loss=0.68Epoch 1/10:  22%|███████████████████████████▍                                                                                                  | 245/1125 [02:26<08:58,  1.63it/s, loss=0.69Epoch 1/10:  22%|███████████████████████████▌                                                                                                  | 246/1125 [02:26<08:50,  1.66it/s, loss=0.69Epoch 1/10:  22%|███████████████████████████▌                                                                                                  | 246/1125 [02:27<08:50,  1.66it/s, loss=0.69Epoch 1/10:  22%|███████████████████████████▋                                                                                                  | 247/1125 [02:27<08:53,  1.65it/s, loss=0.69Epoch 1/10:  22%|███████████████████████████▋                                                                                                  | 247/1125 [02:28<08:53,  1.65it/s, loss=0.65Epoch 1/10:  22%|███████████████████████████▊                                                                                                  | 248/1125 [02:28<08:53,  1.64it/s, loss=0.65Epoch 1/10:  22%|███████████████████████████▊                                                                                                  | 248/1125 [02:28<08:53,  1.64it/s, loss=0.69Epoch 1/10:  22%|███████████████████████████▉                                                                                                  | 249/1125 [02:28<08:04,  1.81it/s, loss=0.69Epoch 1/10:  22%|███████████████████████████▉                                                                                                  | 249/1125 [02:29<08:04,  1.81it/s, loss=0.70Epoch 1/10:  22%|████████████████████████████                                                                                                  | 250/1125 [02:29<07:57,  1.83it/s, loss=0.70Epoch 1/10:  22%|████████████████████████████                                                                                                  | 250/1125 [02:29<07:57,  1.83it/s, loss=0.67Epoch 1/10:  22%|████████████████████████████                                                                                                  | 251/1125 [02:29<08:15,  1.76it/s, loss=0.67Epoch 1/10:  22%|████████████████████████████                                                                                                  | 251/1125 [02:30<08:15,  1.76it/s, loss=0.66Epoch 1/10:  22%|████████████████████████████▏                                                                                                 | 252/1125 [02:30<08:28,  1.72it/s, loss=0.66Epoch 1/10:  22%|████████████████████████████▏                                                                                                 | 252/1125 [02:30<08:28,  1.72it/s, loss=0.70Epoch 1/10:  22%|████████████████████████████▎                                                                                                 | 253/1125 [02:30<08:32,  1.70it/s, loss=0.70Epoch 1/10:  22%|████████████████████████████▎                                                                                                 | 253/1125 [02:31<08:32,  1.70it/s, loss=0.69Epoch 1/10:  23%|████████████████████████████▍                                                                                                 | 254/1125 [02:31<08:38,  1.68it/s, loss=0.69Epoch 1/10:  23%|████████████████████████████▍                                                                                                 | 254/1125 [02:32<08:38,  1.68it/s, loss=0.68Epoch 1/10:  23%|████████████████████████████▌                                                                                                 | 255/1125 [02:32<08:36,  1.68it/s, loss=0.68Epoch 1/10:  23%|████████████████████████████▌                                                                                                 | 255/1125 [02:32<08:36,  1.68it/s, loss=0.71Epoch 1/10:  23%|████████████████████████████▋                                                                                                 | 256/1125 [02:32<08:39,  1.67it/s, loss=0.71Epoch 1/10:  23%|████████████████████████████▋                                                                                                 | 256/1125 [02:33<08:39,  1.67it/s, loss=0.66Epoch 1/10:  23%|████████████████████████████▊                                                                                                 | 257/1125 [02:33<08:42,  1.66it/s, loss=0.66Epoch 1/10:  23%|████████████████████████████▊                                                                                                 | 257/1125 [02:34<08:42,  1.66it/s, loss=0.67Epoch 1/10:  23%|████████████████████████████▉                                                                                                 | 258/1125 [02:34<08:44,  1.65it/s, loss=0.67Epoch 1/10:  23%|████████████████████████████▉                                                                                                 | 258/1125 [02:34<08:44,  1.65it/s, loss=0.68Epoch 1/10:  23%|█████████████████████████████                                                                                                 | 259/1125 [02:34<08:48,  1.64it/s, loss=0.68Epoch 1/10:  23%|█████████████████████████████                                                                                                 | 259/1125 [02:35<08:48,  1.64it/s, loss=0.68Epoch 1/10:  23%|█████████████████████████████                                                                                                 | 260/1125 [02:35<08:49,  1.63it/s, loss=0.68Epoch 1/10:  23%|█████████████████████████████                                                                                                 | 260/1125 [02:35<08:49,  1.63it/s, loss=0.68Epoch 1/10:  23%|█████████████████████████████▏                                                                                                | 261/1125 [02:35<08:42,  1.65it/s, loss=0.68Epoch 1/10:  23%|█████████████████████████████▏                                                                                                | 261/1125 [02:36<08:42,  1.65it/s, loss=0.67Epoch 1/10:  23%|█████████████████████████████▎                                                                                                | 262/1125 [02:36<08:45,  1.64it/s, loss=0.67Epoch 1/10:  23%|█████████████████████████████▎                                                                                                | 262/1125 [02:37<08:45,  1.64it/s, loss=0.66Epoch 1/10:  23%|█████████████████████████████▍                                                                                                | 263/1125 [02:37<08:45,  1.64it/s, loss=0.66Epoch 1/10:  23%|█████████████████████████████▍                                                                                                | 263/1125 [02:37<08:45,  1.64it/s, loss=0.68Epoch 1/10:  23%|█████████████████████████████▌                                                                                                | 264/1125 [02:37<08:45,  1.64it/s, loss=0.68Epoch 1/10:  23%|█████████████████████████████▌                                                                                                | 264/1125 [02:38<08:45,  1.64it/s, loss=0.67Epoch 1/10:  24%|█████████████████████████████▋                                                                                                | 265/1125 [02:38<08:38,  1.66it/s, loss=0.67Epoch 1/10:  24%|█████████████████████████████▋                                                                                                | 265/1125 [02:38<08:38,  1.66it/s, loss=0.71Epoch 1/10:  24%|█████████████████████████████▊                                                                                                | 266/1125 [02:38<08:35,  1.67it/s, loss=0.71Epoch 1/10:  24%|█████████████████████████████▊                                                                                                | 266/1125 [02:39<08:35,  1.67it/s, loss=0.67Epoch 1/10:  24%|█████████████████████████████▉                                                                                                | 267/1125 [02:39<08:33,  1.67it/s, loss=0.67Epoch 1/10:  24%|█████████████████████████████▉                                                                                                | 267/1125 [02:40<08:33,  1.67it/s, loss=0.64Epoch 1/10:  24%|██████████████████████████████                                                                                                | 268/1125 [02:40<08:37,  1.66it/s, loss=0.64Epoch 1/10:  24%|██████████████████████████████                                                                                                | 268/1125 [02:40<08:37,  1.66it/s, loss=0.73Epoch 1/10:  24%|██████████████████████████████▏                                                                                               | 269/1125 [02:40<08:36,  1.66it/s, loss=0.73Epoch 1/10:  24%|██████████████████████████████▏                                                                                               | 269/1125 [02:41<08:36,  1.66it/s, loss=0.69Epoch 1/10:  24%|██████████████████████████████▏                                                                                               | 270/1125 [02:41<08:34,  1.66it/s, loss=0.69Epoch 1/10:  24%|██████████████████████████████▏                                                                                               | 270/1125 [02:41<08:34,  1.66it/s, loss=0.73Epoch 1/10:  24%|██████████████████████████████▎                                                                                               | 271/1125 [02:41<08:31,  1.67it/s, loss=0.73Epoch 1/10:  24%|██████████████████████████████▎                                                                                               | 271/1125 [02:42<08:31,  1.67it/s, loss=0.70Epoch 1/10:  24%|██████████████████████████████▍                                                                                               | 272/1125 [02:42<07:27,  1.91it/s, loss=0.70Epoch 1/10:  24%|██████████████████████████████▍                                                                                               | 272/1125 [02:42<07:27,  1.91it/s, loss=0.70Epoch 1/10:  24%|██████████████████████████████▌                                                                                               | 273/1125 [02:42<07:46,  1.83it/s, loss=0.70Epoch 1/10:  24%|██████████████████████████████▌                                                                                               | 273/1125 [02:43<07:46,  1.83it/s, loss=0.72Epoch 1/10:  24%|████████████████████Epoch 1/10:  62%|██████████████████████████████████████████████████████████████████████████████▏                                               | 698/1125 [06:55<04:16,  1.66itEpoch 1/10: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1125/1125 [11:09<00:00,  1.68it/s, loss=0.7067, acc=56.1%]
+
+Epoch 1 | Train Loss: 0.6779 | Train Acc: 56.14% | Val Acc: 61.18% | F1: 60.56%
+  Saved best model (val_acc=61.18%)
+Epoch 2/10: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1125/1125 [11:07<00:00,  1.68it/s, loss=0.6174, acc=62.6%]
+
+Epoch 2 | Train Loss: 0.6391 | Train Acc: 62.63% | Val Acc: 62.52% | F1: 62.52%
+  Saved best model (val_acc=62.52%)
+Epoch 3/10: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1125/1125 [11:06<00:00,  1.69it/s, loss=0.5839, acc=69.2%]
+
+Epoch 3 | Train Loss: 0.5770 | Train Acc: 69.16% | Val Acc: 62.38% | F1: 62.37%
+Epoch 4/10: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1125/1125 [11:09<00:00,  1.68it/s, loss=0.3081, acc=76.7%]
+
+Epoch 4 | Train Loss: 0.4710 | Train Acc: 76.73% | Val Acc: 62.98% | F1: 62.65%
+  Saved best model   al_acc=62.98%)
+Epoch 5/10: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1125/1125 [11:11<00:00,  1.67it/s, loss=0.4242, acc=84.5%]
+
+Epoch 5 | Train Loss: 0.3440 | Train Acc: 84.54% | Val Acc: 62.62% | F1: 62.62%
+Epoch 6/10: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1125/1125 [11:10<00:00,  1.68it/s, loss=0.2091, acc=90.0%]
+
+Epoch 6 | Train Loss: 0.2410 | Train Acc: 89.96% | Val Acc: 62.28% | F1: 62.27%
+Epoch 7/10: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 1125/1125 [11:11<00:00,  1.67it/s, loss=0.2667, acc=93.4%]
+
+Epoch 7 | Train Loss: 0.1656 | Train Acc: 93.42% | Val Acc: 62.98% | F1: 62.94%
+Early stopping.
+
+>> e! Best Val Accuracy: 62.98%
+PS C:\Users\asus>  Improvement: -13.07%
+PS C:\Users\asus> viksha:/data/debkanta/nyaya_project/sedd$ client_loop: send disconnect: Connection reset
+PS C:\Users\asus>
+PS C:\Users\asus> ssh debkanta@172.31.100.251
+debkanta@172.31.100.251's password:
+Welcome to Ubuntu 24.04.2 LTS (GNU/Linux 6.8.0-111-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Sun May 24 02:46:39 PM UTC 2026
+
+  System load:                  13.6
+  Usage of /:                   73.4% of 6.87TB
+  Memory usage:                 8%
+  Swap usage:                   20%
+  Temperature:                  48.1 C
+  Processes:                    2550
+  Users logged in:              7
+  IPv4 address for ens238f0np0: 172.31.100.251
+  IPv4 address for ens238f0np0: 172.31.12.100
+  IPv6 address for ens238f0np0: 2001:df0:92:0:7d2d:f00e:43d8:e852
+  IPv6 address for ens238f0np0: 2001:df0:92:0:98b7:4507:1572:7f73
+  IPv6 address for ens238f0np0: 2001:df0:92:0:44d4:f1f9:32da:652e
+  IPv6 address for ens238f0np0: 2001:df0:92:0:c34f:234e:8b28:b5bd
+  IPv6 address for ens238f0np0: 2001:df0:92:0:2e82:2176:52e1:aa35
+  IPv6 address for ens238f0np0: 2001:df0:92:0:4267:1641:8fe3:be77
+  IPv6 address for ens238f0np0: 2001:df0:92:0:43ba:ed1e:c911:fcf2
+  IPv6 address for ens238f0np0: 2001:df0:92:0:8683:f8f3:20ae:71ab
+  IPv6 address for ens238f0np0: 2001:df0:92:0:c959:45c:6bb3:f747
+  IPv6 address for ens238f0np0: 2001:df0:92:0:bdc:fd75:49cc:c93d
+  IPv6 address for ens238f0np0: 2001:df0:92:0:56b:63d5:a578:77cb
+  IPv6 address for ens238f0np0: 2001:df0:92:0:69:e74:2d64:c23
+  IPv6 address for ens238f0np0: 2001:df0:92:0:c5fb:b35f:8cc2:2c5a
+  IPv6 address for ens238f0np0: 2001:df0:92:0:6fcc:e6d:2f17:7e2
+  IPv6 address for ens238f0np0: 2001:df0:92:0:73ef:7ebd:8c25:6ebd
+  IPv6 address for ens238f0np0: 2001:df0:92:0:925a:8ff:fe98:5a48
+
+  => There are 2 zombie processes.
+
+ * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+   just raised the bar for easy, resilient and secure K8s cluster deployment.
+
+   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+
+Expanded Security Maintenance for Applications is not enabled.
+
+139 updates can be applied immediately.
+To see these additional updates run: apt list --upgradable
+
+21 additional security updates can be applied with ESM Apps.
+Learn more about enabling ESM Apps service at https://ubuntu.com/esm
+
+
+15 updates could not be installed automatically. For more details,
+see /var/log/unattended-upgrades/unattended-upgrades.log
+
+*** System restart required ***
+Last login: Sun May 24 16:54:16 2026 from 172.27.27.179
+(base) debkanta@anviksha:~$ conda activate sedd
+(sedd) debkanta@anviksha:~$ python3 /data/debkanta/nyaya_project/sedd/train.py \
+    "The petitioner challenges termination of service without \
+     following due process under Article 311."
+Loading tokenizer...
+Loading data...
+  CJPE_ext_SCI_HCs_single.csv: 10,000
+^C^C^C^C
+
+^A^A^A^C^C
+
+
+
+
+
+^C^C^C^C^C^C^C^C^C^C^C^C^C^CTraceback (most recent call last):
+  File "/data/debkanta/nyaya_project/sedd/train.py", line 37, in <module>
+    df = pd.read_csv(f, usecols=["text", "label"])
+  File "/home/debkanta/miniconda3/envs/sedd/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/debkanta/miniconda3/envs/sedd/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 626, in _read
+    return parser.read(nrows)
+  File "/home/debkanta/miniconda3/envs/sedd/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1923, in read
+    ) = self._engine.read(  # type: ignore[attr-defined]
+  File "/home/debkanta/miniconda3/envs/sedd/lib/python3.10/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 234, in read
+    chunks = self._reader.read_low_memory(nrows)
+  File "pandas/_libs/parsers.pyx", line 838, in pandas._libs.parsers.TextReader.read_low_memory
+  File "pandas/_libs/parsers.pyx", line 905, in pandas._libs.parsers.TextReader._read_rows
+  File "pandas/_libs/parsers.pyx", line 874, in pandas._libs.parsers.TextReader._tokenize_rows
+  File "pandas/_libs/parsers.pyx", line 891, in pandas._libs.parsers.TextReader._check_tokenize_status
+  File "pandas/_libs/parsers.pyx", line 2061, in pandas._libs.parsers.raise_parser_error
+pandas.errors.ParserError: Error tokenizing data. C error: Calling read(nbytes) on source failed. Try engine='python'.
+(sedd) debkanta@anviksha:~$
+(sedd) debkanta@anviksha:~$ python3 /data/debkanta/nyaya_project/sedd/train.py     "The petitioner challenges termination of service without \following due process under Article 311."
+^[[D^[[D^[[D^[[D^[[D^[[D^[[D^[[D^[[D^[[D^[[D^[[D^[[D^[[D^[[DLoading tokenizer...
+^CTraceback (most recent call last):
+  File "/data/debkanta/nyaya_project/sedd/train.py", line 32, in <module>
+    tokenizer = AutoTokenizer.from_pretrained(BACKBONE)
+  File "/home/debkanta/miniconda3/envs/sedd/lib/python3.10/site-packages/transformers/models/auto/tokenization_auto.py", line 694, in from_pretrained
+    config = AutoConfig.from_pretrained(
+  File "/home/debkanta/miniconda3/envs/sedd/lib/python3.10/site-packages/transformers/models/auto/configuration_auto.py", line 374, in from_pretrained
+    config_dict, unused_kwargs = PreTrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/home/debkanta/miniconda3/envs/sedd/lib/python3.10/site-packages/transformers/configuration_utils.py", line 683, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/home/debkanta/miniconda3/envs/sedd/lib/python3.10/site-packages/transformers/configuration_utils.py", line 738, in _get_config_dict
+    resolved_config_file = cached_file(
+  File "/home/debkanta/miniconda3/envs/sedd/lib/python3.10/site-packages/transformers/utils/hub.py", line 278, in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+  File "/home/debkanta/miniconda3/envs/sedd/lib/python3.10/site-packages/transformers/utils/hub.py", line 422, in cached_files
+    hf_hub_download(
+  File "/home/debkanta/miniconda3/envs/sedd/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/home/debkanta/miniconda3/envs/sedd/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 1010, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+  File "/home/debkanta/miniconda3/envs/sedd/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 1085, in _hf_hub_download_to_cache_dir
+    (url_to_download, etag, commit_hash, expected_size, xet_file_data, head_call_error) = _get_metadata_or_catch_error(
+  File "/home/debkanta/miniconda3/envs/sedd/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 1682, in _get_metadata_or_catch_error
+    metadata = get_hf_file_metadata(
+  File "/home/debkanta/miniconda3/envs/sedd/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/home/debkanta/miniconda3/envs/sedd/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 1604, in get_hf_file_metadata
+    response = _httpx_follow_relative_redirects_with_backoff(
+  File "/home/debkanta/miniconda3/envs/sedd/lib/python3.10/site-packages/huggingface_hub/utils/_http.py", line 685, in _httpx_follow_relative_redirects_with_backoff
+    response = http_backoff(
+  File "/home/debkanta/miniconda3/envs/sedd/lib/python3.10/site-packages/huggingface_hub/utils/_http.py", line 559, in http_backoff
+    return next(
+  File "/home/debkanta/miniconda3/envs/sedd/lib/python3.10/site-packages/huggingface_hub/utils/_http.py", line 467, in _http_backoff_base
+    response = client.request(method=method, url=url, **kwargs)
+  File "/home/debkanta/miniconda3/envs/sedd/lib/python3.10/site-packages/httpx/_client.py", line 825, in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+  File "/home/debkanta/miniconda3/envs/sedd/lib/python3.10/site-packages/httpx/_client.py", line 914, in send
+    response = self._send_handling_auth(
+  File "/home/debkanta/miniconda3/envs/sedd/lib/python3.10/site-packages/httpx/_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "/home/debkanta/miniconda3/envs/sedd/lib/python3.10/site-packages/httpx/_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "/home/debkanta/miniconda3/envs/sedd/lib/python3.10/site-packages/httpx/_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+  File "/home/debkanta/miniconda3/envs/sedd/lib/python3.10/site-packages/httpx/_transports/default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+  File "/home/debkanta/miniconda3/envs/sedd/lib/python3.10/site-packages/httpcore/_sync/connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "/home/debkanta/miniconda3/envs/sedd/lib/python3.10/site-packages/httpcore/_sync/connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+  File "/home/debkanta/miniconda3/envs/sedd/lib/python3.10/site-packages/httpcore/_sync/connection.py", line 101, in handle_request
+    raise exc
+  File "/home/debkanta/miniconda3/envs/sedd/lib/python3.10/site-packages/httpcore/_sync/connection.py", line 78, in handle_request
+    stream = self._connect(request)
+  File "/home/debkanta/miniconda3/envs/sedd/lib/python3.10/site-packages/httpcore/_sync/connection.py", line 124, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+  File "/home/debkanta/miniconda3/envs/sedd/lib/python3.10/site-packages/httpcore/_backends/sync.py", line 208, in connect_tcp
+    sock = socket.create_connection(
+  File "/home/debkanta/miniconda3/envs/sedd/lib/python3.10/socket.py", line 845, in create_connection
+    sock.connect(sa)
+KeyboardInterrupt
+^C
+(sedd) debkanta@anviksha:~$ ^C
+(sedd) debkanta@anviksha:~$
+(sedd) debkanta@anviksha:~$
+(sedd) debkanta@anviksha:~$
+(sedd) debkanta@anviksha:~$
+(sedd) debkanta@anviksha:~$
+(sedd) debkanta@anviksha:~$
+(sedd) debkanta@anviksha:~$
+(sedd) debkanta@anviksha:~$ python3 /data/debkanta/nyaya_project/sedd/predict.py     "The petitioner challenges termination of service without \following due process under Article 311."
+python3: can't open file '/data/debkanta/nyaya_project/sedd/predict.py': [Errno 2] No such file or directory
+(sedd) debkanta@anviksha:~$ ls
+benchmark  chisel_1.11.5_linux_amd64  diffusion_benchmark  miniconda3  mygpu_env  nyaya-diffusion  nyaya_results.json  remote_eval_nyaya.py  sedd_log.txt  snap
+(sedd) debkanta@anviksha:~$ cd /data/debkanta/nyaya_project/sedd/
+(sedd) debkanta@anviksha:/data/debkanta/nyaya_project/sedd$ ls
+checkpoints  checkpoints_combined  checkpoints_final  train

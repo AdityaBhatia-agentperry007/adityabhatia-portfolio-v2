@@ -1,0 +1,56 @@
+---
+title: "on learning something completely new while doing it"
+date: "2026-04-12"
+description: "what happened when i entered imc prosperity 4 with no quant background and had to learn market microstructure mid-competition"
+tags: ["learning", "quant", "imc"]
+draft: false
+---
+
+the thing about entering a field you know nothing about is that you have no idea
+which parts are hard until you hit them
+
+when someone sent me the imc prosperity 4 link i knew vaguely what algorithmic
+trading was. prices, models, signals — i had the vocabulary at a surface level.
+what i didn't have was any understanding of how order books actually work, why
+market makers exist and what the economics of their position is, how options
+pricing is derived from first principles, or what volatility actually means
+as a mathematical object rather than just "uncertainty"
+
+so the first few days were a lot of reading. bergomi's book on volatility has this
+quality where each chapter assumes you've really understood the previous one and
+if you haven't you'll get through the chapter fine and then realize at the end
+that you missed something. hull on options is clearer but also longer. i read
+them in parallel which isn't how you're supposed to read technical books but time
+was a constraint
+
+what i found is that the concepts are interconnected in ways that aren't obvious
+from outside. understanding why implied volatility is not the same as realized
+volatility requires understanding what an option actually is, which requires
+understanding why the payoff structure creates a specific kind of risk exposure,
+which requires understanding how traders hedge that exposure, which changes how
+you think about what implied volatility is measuring in the first place. you
+can't really learn any of these things in isolation
+
+the competition structure forced a deadline on the learning that was useful in
+a way i didn't expect. you couldn't wait until you fully understood something
+before testing it — you'd run out of competition days. so you'd have a partial
+understanding of how GARCH volatility forecasting works, use it to build something,
+watch the results, and update your understanding based on what actually happened.
+that feedback loop, compressed into days rather than a semester, taught me a lot
+more than reading the whole textbook would have
+
+the part i'm still thinking about: we came in the top 1% globally. 22,000 teams,
+most of them with real experience in this domain. i don't think that's because
+i'm particularly talented at finance — i'm not, relative to people who've spent
+years in it. i think it's because entering with no background meant i had no
+habits to unlearn and no "obviously you do it this way" assumptions baked in,
+so i read everything as new information rather than filtering it through what
+i already thought i knew
+
+that probably has a use beyond this specific context
+
+the corollary is that doing this is uncomfortable in a way that's hard to sit with.
+not knowing things, especially in a competitive context where other people do know
+them, is unpleasant. there's a pull toward the areas where you're already competent
+because competence feels better than confusion. i think knowing that pull is there
+and doing the hard thing anyway is more learnable than people think it is
