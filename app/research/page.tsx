@@ -36,21 +36,11 @@ export default function ResearchPage() {
         </div>
 
         <div className="flex space-x-4 font-mono text-[11px] pt-2">
-          <a
-            href="https://web-app-garbled-circuits-zrds.vercel.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-[var(--accent)] hover:opacity-85 transition-opacity"
-          >
+          <a href="https://web-app-garbled-circuits-zrds.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-[var(--accent)] hover:opacity-85 transition-opacity">
             live demo
           </a>
           <span className="text-[var(--border-2)]">|</span>
-          <a
-            href="https://github.com/AdityaBhatia-agentperry007/CryptoVault-MPC"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-[var(--text-2)] hover:text-[var(--text)] transition-colors"
-          >
+          <a href="https://github.com/AdityaBhatia-agentperry007/CryptoVault-MPC" target="_blank" rel="noopener noreferrer" className="text-[var(--text-2)] hover:text-[var(--text)] transition-colors">
             github
           </a>
         </div>
@@ -76,12 +66,7 @@ export default function ResearchPage() {
         </div>
 
         <div className="flex space-x-4 font-mono text-[11px] pt-2">
-          <a
-            href="https://github.com/AdityaBhatia-agentperry007/D2AR-diffusion-vs-ar-hindi-nlp"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-[var(--text-2)] hover:text-[var(--text)] transition-colors"
-          >
+          <a href="https://github.com/AdityaBhatia-agentperry007/D2AR-diffusion-vs-ar-hindi-nlp" target="_blank" rel="noopener noreferrer" className="text-[var(--text-2)] hover:text-[var(--text)] transition-colors">
             github
           </a>
         </div>

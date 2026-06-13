@@ -125,6 +125,31 @@ body {
   animation: shake 0.4s ease-in-out;
 }
 
+/* ─── Terminal / Graphic Box Styles ─── */
+.terminal-box {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+
+.terminal-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+.terminal-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.terminal-dot-red { background: #ff5f57; }
+.terminal-dot-yellow { background: #febc2e; }
+.terminal-dot-green { background: #28c840; }
+
 /* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 6px;
@@ -189,4 +214,3 @@ html {
   font-weight: 600;
   color: var(--text);
 }
-

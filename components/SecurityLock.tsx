@@ -44,9 +44,16 @@ export default function SecurityLock() {
     document.addEventListener('contextmenu', handleContextMenu);
     document.addEventListener('keydown', handleKeyDown);
 
+    // Anti-debugging loop: crashes/pauses the page if devtools are opened
+    const blockDevtools = setInterval(() => {
+      // eslint-disable-next-line no-debugger
+      debugger;
+    }, 50);
+
     return () => {
       document.removeEventListener('contextmenu', handleContextMenu);
       document.removeEventListener('keydown', handleKeyDown);
+      clearInterval(blockDevtools);
     };
   }, []);
 

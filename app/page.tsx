@@ -1,5 +1,8 @@
 'use client';
 import Link from 'next/link';
+import dynamic from 'next/dynamic';
+
+const AsciiDonut = dynamic(() => import('@/components/AsciiSphere'), { ssr: false });
 
 export default function Home() {
   return (
@@ -38,6 +41,49 @@ export default function Home() {
         <Link href="/contact" className="hover:text-[var(--text)] transition-colors">
           contact
         </Link>
+      </div>
+
+      {/* Graphic Boxes Row */}
+      <div className="mt-14 w-full grid grid-cols-1 sm:grid-cols-2 gap-4">
+        {/* Donut Animation Box */}
+        <AsciiDonut />
+
+        {/* Status / Info Graphic Box */}
+        <div className="terminal-box">
+          <div className="terminal-header">
+            <div className="terminal-dot terminal-dot-red" />
+            <div className="terminal-dot terminal-dot-yellow" />
+            <div className="terminal-dot terminal-dot-green" />
+            <span className="ml-3 font-mono text-[9px] text-[var(--text-3)] uppercase tracking-wider">
+              status.log
+            </span>
+          </div>
+          <div className="p-4 font-mono text-[10px] text-[var(--text-2)] space-y-2.5" style={{ background: 'var(--code-bg)' }}>
+            <div className="flex items-center gap-2">
+              <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 inline-block" />
+              <span className="text-[var(--text-3)]">SYS</span>
+              <span>all systems nominal</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <span className="w-1.5 h-1.5 rounded-full bg-[var(--accent)] inline-block" />
+              <span className="text-[var(--text-3)]">RES</span>
+              <span>MPC research @ IIT kanpur</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <span className="w-1.5 h-1.5 rounded-full bg-amber-500 inline-block" />
+              <span className="text-[var(--text-3)]">BLD</span>
+              <span>orca AI — android task automation</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <span className="w-1.5 h-1.5 rounded-full bg-blue-500 inline-block" />
+              <span className="text-[var(--text-3)]">SEC</span>
+              <span>openai + anthropic disclosed</span>
+            </div>
+            <div className="border-t border-[var(--border)] pt-2 mt-2 text-[var(--text-3)]">
+              <span className="text-[8px] uppercase tracking-widest">$ uptime: 17 yrs · location: kanpur · top 1% IMC</span>
+            </div>
+          </div>
+        </div>
       </div>
 
       {/* Infinite Marquee Ticker at the absolute bottom */}
