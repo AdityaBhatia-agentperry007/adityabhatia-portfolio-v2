@@ -58,23 +58,23 @@ export default function Home() {
           <div className="p-4 font-mono text-[10px] text-[var(--text-2)] space-y-2.5" style={{ background: 'var(--code-bg)' }}>
             <div className="flex items-center gap-2">
               <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 inline-block" />
-              <span className="text-[var(--text-3)]">SYS</span>
-              <span>all systems nominal</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <span className="w-1.5 h-1.5 rounded-full bg-[var(--accent)] inline-block" />
               <span className="text-[var(--text-3)]">RES</span>
-              <span>MPC research @ IIT kanpur</span>
+              <span>cryptography research @ IIT kanpur</span>
             </div>
             <div className="flex items-center gap-2">
               <span className="w-1.5 h-1.5 rounded-full bg-amber-500 inline-block" />
-              <span className="text-[var(--text-3)]">BLD</span>
-              <span>orca AI — android task automation</span>
+              <span className="text-[var(--text-3)]">QNT</span>
+              <span>top 1% globally @ IMC prosperity 4</span>
             </div>
             <div className="flex items-center gap-2">
               <span className="w-1.5 h-1.5 rounded-full bg-blue-500 inline-block" />
-              <span className="text-[var(--text-3)]">SEC</span>
-              <span>openai + anthropic disclosed</span>
+              <span className="text-[var(--text-3)]">SYS</span>
+              <span>ghostwriting for nvidia research</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <span className="w-1.5 h-1.5 rounded-full bg-[var(--accent)] inline-block" />
+              <span className="text-[var(--text-3)]">FND</span>
+              <span>YC startup school · #1/3500+ @ polaris U2U</span>
             </div>
             <div className="border-t border-[var(--border)] pt-2 mt-2 text-[var(--text-3)]">
               <span className="text-[8px] uppercase tracking-widest">$ uptime: 17 yrs · location: kanpur · top 1% IMC</span>
