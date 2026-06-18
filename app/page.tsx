@@ -44,17 +44,14 @@ export default function Home() {
       </div>
 
       {/* Graphic Boxes Row */}
-      <div className="mt-14 w-full grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <div className="mt-14 w-full grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-4">
         {/* Donut Animation Box */}
         <AsciiDonut />
 
         {/* Status / Info Graphic Box */}
         <div className="terminal-box">
-          <div className="terminal-header">
-            <div className="terminal-dot terminal-dot-red" />
-            <div className="terminal-dot terminal-dot-yellow" />
-            <div className="terminal-dot terminal-dot-green" />
-            <span className="ml-3 font-mono text-[9px] text-[var(--text-3)] uppercase tracking-wider">
+          <div className="terminal-header border-b border-[var(--border)]">
+            <span className="font-mono text-[9px] text-[var(--text-3)] uppercase tracking-wider">
               status.log
             </span>
           </div>

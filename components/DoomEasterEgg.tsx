@@ -359,7 +359,7 @@ export default function DoomEasterEgg() {
                 duration: 1.8,
                 ease: [0.19, 1, 0.22, 1],
               }}
-              className="relative w-72 h-72 md:w-96 md:h-96 mb-6 border border-red-800/80 overflow-hidden bg-black shadow-[0_0_60px_rgba(220,38,38,0.25)]"
+              className="relative w-[50vmin] h-[50vmin] min-w-[200px] min-h-[200px] max-w-[384px] max-h-[384px] mb-6 border border-red-800/80 overflow-hidden bg-black shadow-[0_0_60px_rgba(220,38,38,0.25)]"
             >
               <Image
                 src="/dr_doom.png"

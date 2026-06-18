@@ -10,7 +10,7 @@ export default function ParticleGrid() {
     const ctx = canvas.getContext('2d');
     if (!ctx) return;
 
-    const GRID = 42;       // px between dots
+    const GRID = window.innerWidth < 768 ? 64 : 42;       // px between dots
     const DOT_R = 1.1;     // dot radius
     const MOUSE_R = 100;   // mouse influence radius
 

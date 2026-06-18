@@ -61,7 +61,7 @@ export default function RootLayout({
           <ParticleGrid />
           <DoomEasterEgg />
           <Nav />
-          <main className="relative z-10 max-w-[680px] mx-auto px-6 pt-24 pb-16">
+          <main className="relative z-10 max-w-[760px] lg:max-w-[860px] mx-auto px-6 pt-24 pb-16">
             <Breadcrumb />
             {children}
           </main>
