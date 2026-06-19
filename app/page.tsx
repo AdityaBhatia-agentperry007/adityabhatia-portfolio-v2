@@ -69,7 +69,7 @@ export default function Home() {
             <div className="flex items-center gap-2">
               <span className="w-1.5 h-1.5 rounded-full bg-blue-500 inline-block" />
               <span className="text-[var(--text-3)]">SYS</span>
-              <span>ghostwriting for nvidia research</span>
+              <span>contributor to nvidia cudastf research</span>
             </div>
             <div className="flex items-center gap-2">
               <span className="w-1.5 h-1.5 rounded-full bg-[var(--accent)] inline-block" />
